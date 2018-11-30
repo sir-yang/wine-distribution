@@ -1,0 +1,343 @@
+
+.swiper-container {
+	width: 100%;
+	height: 7.5rem;
+}
+
+.swiper-slide img {
+	width: 100%;
+}
+
+.shop-base-info {
+	background: #fff;
+	padding: .2rem .3rem;
+}
+
+.shop-base-info .price-now {
+	font-size: .36rem;
+	color: #e42c15;	
+}
+.shop-base-info .price-old {
+	margin-left: .1rem;
+	font-size: .24rem;
+	color: #ccc;
+	text-decoration: line-through;
+}
+
+.shop-base-info .share-img {
+	display: block;
+	width: .5rem;
+	height: .5rem;
+}
+.shop-base-info .share-img img {
+	display: block;
+	margin-top: .1rem;
+	margin-left: .1rem;
+	width: .3rem;
+	height: .3rem;
+}
+
+.detail-comment {
+	width: 100%;
+	height: 1rem;
+	margin-top: .2rem;
+	margin-bottom: .1rem;
+	background: #fff;
+}
+
+.detail-comment > div.flex1 {
+	position: relative;
+	font-size: .28rem;
+	color: #333;
+	text-align: center;
+	line-height: 1rem;
+}
+.detail-comment > div.on::after {
+	display: block;
+	content: '';
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+	width: .6rem;
+	height: 2px;
+	margin-left: -.3rem;
+	-webkit-border-radius: 1px;
+	-moz-border-radius: 1px;
+	-o-border-radius: 1px;
+	border-radius: 1px;
+	background: #dd0a35;
+}
+
+
+/*评论*/
+.detail-comment-list-box {
+	padding: 0 .3rem;
+	background: #fff;
+}
+
+.detail-comment-item {
+	padding-top: .2rem;
+	padding-bottom: .15rem;
+	border-bottom: 1px dashed #e9e9e9;
+}
+.detail-comment-item:last-child {
+	border-bottom: none;
+}
+.detail-comment-left {
+	display: block;
+	width: .7rem;
+	height: .7rem;
+	margin-right: .2rem;
+}
+
+.detail-comment-right .star_box {
+	margin-left: .3rem;
+}
+
+.detail-comment-right .star_box img {
+	display: inline-block;
+	margin-right: 3px;
+	width: .22rem;
+	height: .22rem;
+}
+
+.detail-comment-right .comment-img-box img {
+	display: inline-block;
+	width: 1.9rem;
+	height: 1.9rem;
+	margin-bottom: .15rem;
+}
+
+.detail-comment-right .comment-img-box img:nth-child(3n-1) {
+	margin: 0 .15rem;
+}
+
+.merchant-comment-box {
+	position: relative;
+	margin-top: .3rem;
+	padding: .2rem;
+	background: #f6f7f8;
+}
+.merchant-comment-box .arrow {
+	position: absolute;
+	top: -.4rem;
+	left: .4rem;
+	width: 0;
+	height: 0;
+	border-color: transparent transparent #f6f7f8 transparent;
+	border-width: .2rem;
+	border-style: solid;
+}
+
+.merchant-comment-box .comment-head {
+	display: inline-block;
+	width: .7rem;
+	height: .7rem;
+	margin-right: .15rem;
+}
+
+.merchant-comment-box span {
+	display: block;
+}
+
+
+/*底部*/
+.detail-footer-spacing {
+	width: 100%;
+	height: 1.25rem;
+}
+.detail-footer {
+	position: fixed;
+	bottom: 0;
+	z-index: 99;
+	width: 100%;
+	height: .98rem;
+	background: #fff;
+	border-top: 1px solid #e9e9e9;
+}
+
+.detail-footer .small-btn {
+	width: 1.25rem;
+	text-align: center;
+}
+.detail-footer .small-btn:nth-child(2) {
+	border-right: 1px solid #e9e9e9;
+	border-left: 1px solid #e9e9e9;
+}
+.detail-footer .small-btn .small-img {
+	width: .31rem;
+	height: .31rem;
+	margin: auto;
+	margin-top: .15rem;
+	text-align: center;
+}
+
+.detail-footer .small-btn .small-img img {
+	display: block;
+}
+
+.detail-footer .small-btn span {
+	display: block;
+	margin-top: .05rem;
+	font-size: .2rem;
+	color: #666;
+}
+
+.detail-footer a.btn {
+	width: 2.1rem;
+	height: .66rem;
+	-webkit-border-radius: .12rem;
+	-moz-border-radius: .12rem;
+	-o-border-radius: .12rem;
+	border-radius: .12rem;
+	text-align: center;
+	line-height: .66rem;
+	font-size: .3rem;
+	color: #fff;
+}
+.detail-footer a.detail-cart-btn {
+	background: #fa932a;
+}
+
+.detail-footer a.detail-buy-btn {
+	background: #dd0a35;
+}
+
+/*分享弹框*/
+.share-modal-content {
+	position: fixed;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: #fff;
+	z-index: 105;
+}
+.share-modal-content .modal-tit {
+	position: relative;
+	margin-top: .35rem;
+	font-size: .28rem;
+	color: #999;
+	text-align: center;
+}
+.share-modal-content .modal-tit::before {
+	display: block;
+	content: '';
+	position: absolute;
+	top: 50%;
+	right: 50%;
+	width: .5rem;
+	height: 1px;
+	margin-right: -1.25rem;
+	background: #e9e9e9;
+}
+.share-modal-content .modal-tit::after {
+	display: block;
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: .5rem;
+	height: 1px;
+	margin-left: -1.25rem;
+	background: #e9e9e9;
+}
+
+.share-content {
+	padding-bottom: .45rem;
+}
+.share-modal-content .share_btn {
+	position: relative;
+	display: block;
+	margin: .5rem .35rem .25rem;
+	width: 2.28rem;
+	height: .86rem;
+	-webkit-border-radius: .22rem;
+	-moz-border-radius: .22rem;
+	-o-border-radius: .22rem;
+	border-radius: .22rem;
+	text-align: center;
+}
+.share-modal-content a.friends {
+	background: #0bb51f;
+}
+.share-modal-content a.circle {
+	background: #b50b17;
+}
+
+.share-modal-content .share_btn img {
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.share-modal-content a.friends img {
+	width: .64rem;
+	height: .52rem;
+}
+.share-modal-content a.circle img {
+	width: .56rem;
+	height: .56rem;
+}
+
+.share-modal-content span {
+	display: block;
+	text-align: center;
+}
+
+.cacal_btn {
+	position: relative;
+	width: 100%;
+	height: 1.4rem;
+	line-height: 1.2rem;
+	text-align: center;
+	font-size: .34rem;
+	color: #333;
+}
+.cacal_btn::before {
+	display: block;
+	content: '';
+	width: 100%;
+	height: .2rem;
+	background: #f2f3f4;
+}
+
+/*海报弹框*/
+.circle-modal-content {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 105;
+	width: 5.1rem;
+	padding-bottom: .5rem;
+	background: #fff;
+	-webkit-border-radius: .1rem;
+	-moz-border-radius: .1rem;
+	-o-border-radius: .1rem;
+	border-radius: .1rem;
+}
+
+.circle-modal-content .close-icon {
+	position: absolute;
+	top: -.22rem;
+	right: -.22rem;
+	width: .44rem;
+	height: .44rem;
+	z-index: 106;
+}
+
+.circle-modal-content .circle-tit {
+	line-height: 1rem;
+	text-align: center;
+	font-size: .34rem;
+	color: #333;
+}
+
+.circle-modal-content .haibao-img-box {
+	padding: .4rem;
+	border-top: 1px solid #e9e9e9;
+}
+.circle-modal-content .haibao-img-box .haibao_img {
+	width: 100%;
+}

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/weui.css">
+    <link rel="stylesheet" href="../css/jquery-weui.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/shopCart.css">
+    <script src="../js/setFontSize.js"></script>
+	<title>购物车</title>
+</head>
+<body>
+
+    <div class="page">
+        <div class="page__bd" style="height: 100%;">
+            <div class="cart-top-prompt-box">
+                <div class="cart-top-prompt">购买说明：只能确保为原厂正货！并且保证与当时市场上同样主流新品一致。若本商城没有及时更新，请大家谅解！</div>
+            </div>
+
+            <div class="shop-cart-list-box">
+                <!-- 购物车无数据 -->
+                <div class="cart-not-shop hide">
+                    <img class="cart-not-icon" src="../images/not_cart_icon.png" alt="">
+                    <span>购物车还是空的~</span>
+                    <a href="index.html" class="add-shop-btn">去逛逛</a>
+                </div>
+                
+                <!-- 购物车有数据 -->
+                <a href="javascript:;">
+                    <div class="flex_start flex_items">
+                        <div class="cart-shop-left">
+                            <i class="weui-icon-success"></i>
+                        </div>
+                        <div class="cart-shop-center">
+                            <img class="cart-shop-center-img" src="../images/shop_banner.png" alt="">
+                        </div>
+                        <div class="carts-shop-right flex1">
+                            <div class="flex_between">
+                                <h4 class="f28 c3 clamp2">五粮液 股份有限公司 五粮醇 红淡雅 白酒(裸瓶装)50度 整...</h4>
+                                <img class="del-cart-shop" src="../images/delete_icon.png" alt="">
+                            </div>
+                            <div class="flex_between flex_items mt10">
+                                <span class="shop-price">¥1068.00</span>
+                                <div class="flex_start cart-num-box">
+                                    <i>-</i>
+                                    <input type="text" value="1" />
+                                    <i class="on">+</i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="javascript:;">
+                    <div class="flex_start flex_items">
+                        <div class="cart-shop-left">
+                            <i class="weui-icon-circle"></i>
+                        </div>
+                        <div class="cart-shop-center">
+                            <img class="cart-shop-center-img" src="../images/shop_banner.png" alt="">
+                        </div>
+                        <div class="carts-shop-right flex1">
+                            <div class="flex_between">
+                                <h4 class="f28 c3 clamp2">五粮液 股份有限公司 五粮醇 红淡雅 白酒(裸瓶装)50度 整...</h4>
+                                <img class="del-cart-shop" src="../images/delete_icon.png" alt="">
+                            </div>
+                            <div class="flex_between flex_items mt10">
+                                <span class="shop-price">¥1068.00</span>
+                                <div class="flex_start cart-num-box">
+                                    <i>-</i>
+                                    <input type="text" value="1" />
+                                    <i class="on">+</i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+
+            <!-- 底部结算 -->
+            <div class="shop-cart-footer-spacing"></div>
+            <div class="shop-cart-footer flex_start flex_items">
+                <div class="footer-left ml30">
+                    <i class="weui-icon-circle"></i>
+                    <span>全选</span>
+                </div>
+                <div class="f24 c9 flex1 txt_center">合计：<strong>¥4854.00</strong><span>(免运费)</span></div>
+                <a href="javascript:;" class="cart-pay-btn">去结算</a>
+            </div>
+            
+
+            <!-- tabbar -->
+            <div class="tabbar-spacing"></div>
+            <div class="weui-tabbar">
+                <a href="#tab1" class="weui-tabbar__item weui-bar__item--on">
+                    <span class="weui-badge" style="position: absolute;top: -.4em;right: 1em;">8</span>
+                    <div class="weui-tabbar__icon"></div>
+                    <p class="weui-tabbar__label">首页</p>
+                </a>
+                <a href="#tab2" class="weui-tabbar__item">
+                    <div class="weui-tabbar__icon"></div>
+                    <p class="weui-tabbar__label">购物车</p>
+                </a>
+                <a href="#tab3" class="weui-tabbar__item">
+                    <div class="weui-tabbar__icon"></div>
+                    <p class="weui-tabbar__label">我的</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script type="text/javascript" src="../js/jquery-2.1.4.js"></script>
+    <script type="text/javascript" src="../js/jquery-weui.js"></script>
+    <script>
+        // 全选
+        $('body').find('.shop-cart-footer').on('click', 'div.footer-left', function() {
+            if ($(this).find('i').hasClass('weui-icon-circle')) {
+                $(this).find('i').addClass('weui-icon-success').removeClass('weui-icon-circle');
+                $('body').find('.cart-shop-left').each(function() {
+                    if ($(this).find('i').hasClass('weui-icon-circle')) {
+                        $(this).find('i').addClass('weui-icon-success').removeClass('weui-icon-circle');
+                    }
+                })
+            } else {
+                $(this).find('i').addClass('weui-icon-circle').removeClass('weui-icon-success');
+                $('body').find('.cart-shop-left').each(function() {
+                    if ($(this).find('i').hasClass('weui-icon-success')) {
+                        $(this).find('i').addClass('weui-icon-circle').removeClass('weui-icon-success');
+                    }
+                })
+            }
+        })
+
+        // 单个商品选择
+        $('body').find('.shop-cart-list-box .cart-shop-left').on('click', 'i', function() {
+            if ($(this).hasClass('weui-icon-circle')) {
+                $(this).addClass('weui-icon-success').removeClass('weui-icon-circle');
+                //判断是否改变全选状态
+                var total = $('body').find('.shop-cart-list-box a').length; //购物车商品数量
+                var leng = $('body').find('.shop-cart-list-box i.weui-icon-success').length; //选中商品数量
+                if (total == leng) {
+                    $('body').find('.footer-left i').addClass('weui-icon-success').removeClass('weui-icon-circle');
+                }
+            } else {
+                $(this).removeClass('weui-icon-success').addClass('weui-icon-circle');
+                if ($('body').find('.footer-left i').hasClass('weui-icon-success')) {
+                    $('body').find('.footer-left i').removeClass('weui-icon-success').addClass('weui-icon-circle');
+                }
+            }
+        })
+
+        // 删除
+        $('body').find('.shop-cart-list-box .carts-shop-right').on('click', 'img', function() {
+            var _that = this;
+            $.confirm({
+                title: '提示',
+                text: '确定从购物车删除该商品？',
+                onOK: function () {
+                    console.log(1);
+                    $(_that).parents('a').remove();
+                },
+                onCancel: function () {
+                    console.log(2);
+                }
+            });
+        })
+
+        // 改变商品数量
+        $('body').find('.shop-cart-list-box .cart-num-box').on('click', 'i', function() {
+            var index = $(this).index();
+            var val = '';
+            if (index == 0) {//减
+                val = $(this).next().val();
+                if (val > 1) {
+                    val = Number(val) - 1;
+                    if (val == 1) {
+                        $(this).removeClass('on');
+                    }
+                    $(this).next().val(val);
+                }
+            } else {//加
+                val = $(this).prev().val();
+                val = Number(val) + 1;
+                $(this).prev().prev().addClass('on');
+                $(this).prev().val(val);
+            }
+        })
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,129 @@
+
+.confirm-address-box {
+	height: 2.2rem;
+	margin-bottom: .2rem;
+	text-align: center;
+	background: url('../images/confirm_order_line.png') repeat-x;
+	background-position: bottom left;
+}
+.confirm-address-box .add-address-img {
+	display: block;
+	width: .7rem;
+	height: .7rem;
+	margin: auto;
+	margin-bottom: .15rem;
+	padding-top: .45rem;
+}
+
+.has-addres-box {
+	padding: 0 .3rem;
+	height: 2.2rem;
+	margin-bottom: .2rem;
+	background: url('../images/confirm_order_line.png') repeat-x;
+	background-position: bottom left;
+}
+.has-addres-box .address-info {
+	flex: 1;
+	margin-left: .3rem;
+	margin-right: .37rem;
+}
+.has-addres-box .left-img {
+	display: block;
+	width: .24rem;
+	height: .32rem;
+}
+.has-addres-box .right-img {
+	display: block;
+	width: .14rem;
+	height: .26rem;
+}
+
+/*订单商品*/
+.confirm-shop-list {
+	background: #fff;
+}
+.shop-item-info {
+	padding: .3rem;
+	border-bottom: 1px solid #e9e9e9;
+}
+.shop-item-info .shop-img {
+	display: block;
+	width: 1.6rem;
+	height: 1.6rem;
+	margin-right: .3rem;
+}
+.shop-item-info .shop-num {
+	font-size: .24rem;
+	color: #444;
+}
+.shop-item-info .shop-price {
+	font-size: .28rem;
+	color: #e42c15;
+}
+
+.statistics-box {
+	padding-right: .3rem;
+	line-height: .8rem;
+	font-size: .22rem;
+	color: #333;
+}
+.statistics-box  strong {
+	font-weight: normal;
+	font-size: .28rem;
+	color: #e42c15;
+}
+
+/*其他信息*/
+.other-info-box {
+	background: #fff;
+}
+
+.other-info-box > div {
+	height: 1.2rem;
+	padding: 0 .3rem;
+}
+
+.other-info-box .remark-ipt {
+	flex: 1;
+	height: .8rem;
+	border: none;
+	outline: none;
+	line-height: .8rem;
+	font-size: .28rem;
+	color: #333;
+}
+
+/*固定底部*/
+.confirm-footer-spacing {
+	width: 100%;
+	height: 1.1rem;
+}
+.confirm-footer-box {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: .98rem;
+	padding: 0 .3rem;
+	background: #fff;
+	border-top: 1px solid #e9e9e9;
+}
+.confirm-footer-box span strong {
+	font-size: .32rem;
+	color: #e42c15;
+	font-weight: normal;
+}
+.confirm-footer-box .pay-btn {
+	display: block;
+	width: 2.1rem;
+	height: .66rem;
+	text-align: center;
+	line-height: .66rem;
+	background: #dd0a35;
+	border-radius: .12rem;
+	-webkit-border-radius: .12rem;
+	-moz-border-radius: .12rem;
+	-o-border-radius: .12rem;
+	font-size: .3rem;
+	color: #fff;
+}

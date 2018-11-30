@@ -1,0 +1,341 @@
+
+/* box布局 */
+
+.flex_start {
+    display: -webkit-flex;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.flex_end {
+    display: -webkit-flex;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.flex_center {
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+}
+
+.flex_around {
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-around;
+}
+
+.flex_between {
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex_warp {
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.flex1 {
+    flex: 1;
+}
+
+.flex2 {
+    flex: 2;
+}
+
+.flex_items {
+    align-items: center;
+}
+.flex_items_start {
+    align-items: flex-start;
+}
+.flex_items_end {
+    align-items: flex-end;
+}
+
+.self_start {
+    align-self: flex-start;
+}
+
+.self_center {
+    align-self: center;
+}
+
+.self_end {
+    align-self: flex-end;
+}
+
+.flex_column {
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+}
+
+.flex_shrink {
+    -webkit-flex-shrink: 0;
+    flex-shrink: 0;
+}
+
+/* 单排显示，超出隐藏 */
+
+.text_overflow {
+    word-break: keep-all;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.clamp1 {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+}
+
+/* 两排显示超出部分隐藏 */
+
+.clamp2 {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+
+/* 三排显示超出部分隐藏 */
+
+.clamp3 {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+}
+
+/* 四排显示超出部分隐藏 */
+
+.clamp4 {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    overflow: hidden;
+}
+
+/*文本对齐方式*/
+.txt_left {
+    text-align: left;
+}
+.txt_center {
+    text-align: center;
+}
+.txt_right {
+    text-align: right;
+}
+
+/*边距*/
+.mtb5 {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.ml10 {
+	margin-left: .1rem;
+}
+.mt10 {
+	margin-top: .1rem;
+}
+.mt20 {
+	margin-top: .2rem;
+}
+.mt30 {
+	margin-top: .3rem;
+}
+
+.ml20 {
+	margin-left: .2rem;
+}
+.ml30 {
+	margin-left: .3rem;
+}
+.mr30 {
+	margin-right: .3rem;
+}
+
+
+.p30 {
+	padding: .3rem;
+}
+.plr30 {
+	padding-left: .3rem;
+	padding-right: .3rem;
+}
+.ptb20 {
+	padding-top: .2rem;
+	padding-bottom: .2rem;
+}
+
+
+/*边框*/
+.bte9 {
+	border-top: 1px solid #e9e9e9;
+}
+.bbe9 {
+	border-bottom: 1px solid #e9e9e9;
+}
+
+/*字体*/
+/*size*/
+.f20 {
+    font-size: .2rem;
+}
+.f22 {
+    font-size: .22rem;
+}
+.f24 {
+    font-size: .24rem;
+}
+.f28 {
+    font-size: .28rem;
+}
+.f30 {
+    font-size: .3rem;
+}
+.f32 {
+    font-size: .32rem;
+}
+.f36 {
+    font-size: .36rem;
+}
+.f38 {
+    font-size: .38rem;
+}
+
+/*字体颜色*/
+/*color*/
+.c3 {
+	color: #333;
+}
+.c6  {
+	color: #666;
+}
+.c9 {
+	color: #999;
+}
+.cf {
+	color: #fff;
+}
+.f0 {
+	color: #000;
+}
+
+
+/*背景色*/
+.bgfff {
+	background: #fff;
+}
+
+
+.pos {
+    position: relative;
+}
+
+.hide {
+    display: none;
+}
+.show {
+    display: block;
+}
+
+
+body {
+	background: #f6f6f6;
+}
+
+
+/*底部 tabbar*/
+.tabbar-spacing {
+	width: 100%;
+	height: 1.06rem;
+}
+.weui-tabbar {
+	position: fixed;
+	width: 100%;
+	bottom: 0;
+	background: #fff;
+}
+
+.weui-tabbar__item.weui-bar__item--on .weui-tabbar__label {
+	color: #ff533b;
+}
+
+.weui-tabbar .weui-tabbar__item:nth-child(1) .weui-tabbar__icon {
+	background: url('../images/tabbar_home_normal.png') no-repeat;
+	background-position: center;
+	background-size: 100%;
+}
+.weui-tabbar .weui-tabbar__item.weui-bar__item--on:nth-child(1) .weui-tabbar__icon {
+	background: url('../images/tabbar_home_selected.png') no-repeat;
+	background-position: center;
+	background-size: 100%;
+}
+.weui-tabbar .weui-tabbar__item:nth-child(2) .weui-tabbar__icon {
+	background: url('../images/tabbar_shop_normal.png') no-repeat;
+	background-position: center;
+	background-size: 100%;
+}
+.weui-tabbar .weui-tabbar__item.weui-bar__item--on:nth-child(2) .weui-tabbar__icon {
+	background: url('../images/tabbar_shop_selected.png') no-repeat;
+	background-position: center;
+	background-size: 100%;
+}
+.weui-tabbar .weui-tabbar__item:nth-child(3) .weui-tabbar__icon {
+	background: url('../images/tabbar_me_normal.png') no-repeat;
+	background-position: center;
+	background-size: 100%;
+}
+.weui-tabbar .weui-tabbar__item.weui-bar__item--on:nth-child(3) .weui-tabbar__icon {
+	background: url('../images/tabbar_me_selected.png') no-repeat;
+	background-position: center;
+	background-size: 100%;
+}
+
+/*轮播 分页*/
+.swiper-pagination-bullet {
+	width: 8px;
+	height: 3px;
+	background: #fff;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	-o-border-radius: 2px;
+	border-radius: 2px;
+	opacity: .5;
+}
+
+.swiper-pagination-bullet-active {
+	width: 19px;
+	opacity: .9;
+}
+.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
+	margin: 0 .05rem;
+}
+
+
+/*弹框 遮罩层*/
+.modal-g {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 100;
+	background: rgba(0,0,0,.5);
+}
+
+/*图片预览层级*/
+.weui-photo-browser-modal {
+	z-index: 100;
+}
