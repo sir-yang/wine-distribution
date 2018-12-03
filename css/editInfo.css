@@ -1,0 +1,23 @@
+
+.weui-cells {
+	margin-top: 0;
+}
+
+.weui-cell {
+	padding: 0 .3rem;
+	line-height: .88rem;
+}
+.weui-cell:first-child {
+	padding: .35rem .3rem;
+}
+
+.weui-cell__bd > p {
+	font-size: .28rem;
+	color: #333;
+}
+
+.weui-cell_access .weui-cell__ft {
+	padding-right: .35rem;
+	font-size: .28rem;
+	color: #333;
+}

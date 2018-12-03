@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/weui.css">
+    <link rel="stylesheet" href="../css/jquery-weui.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/order.css">
+    <script src="../js/setFontSize.js"></script>
+    <title>编辑资料</title>
+</head>
+<body>
+    
+    <div class="page">
+        <div class="page__bd" style="height: 100%;">
+            <div class="order-status-spacing"></div>
+            <div class="order-status-box flex_around">
+                <div class="on">全部</div>
+                <div>待付款</div>
+                <div>待发货</div>
+                <div>待收货</div>
+                <div>已完成</div>
+                <div>售后</div>
+            </div>
+
+            <!-- 无订单 -->
+            <div class="not-order-record hide">
+                <img src="../images/not_order_icon.png" alt="">
+                <span>暂无订单~</span>
+                <a href="index.html" class="add-shop-btn">去逛逛</a>
+            </div>
+
+            <!-- 有订单 -->
+            <div class="has-order-record">
+                <!-- 待支付 -->
+                <div class="order-item-box">
+                    <a href="javascript:;">
+                        <div class="flex_between flex_items">
+                            <span class="f22 c6">订单编号：201708225156284596</span>
+                            <span class="f22 status-color">待付款</span>
+                        </div>
+                        <div class="flex_start ptb20 bbe9">
+                            <img class="order-shop-img" src="../images/shop_banner.png" alt="">
+                            <div class="flex1">
+                                <h4 class="clamp2 f28 c3">郎酒 (langjiu)郎牌郎酒酱香型53度整箱 装500ml *6瓶 传世酱香 重...</h4>
+                                <div class="flex_end flex_items mt30"><span class="f22 c3 mr30">共1件商品</span><span class="f22 c3">实付：<strong class="order-price">¥ 1685.00</strong></span></div>
+                            </div>
+                        </div>
+                        <div class="flex_end flex_items">
+                            <button class="default-order-btn order-status-btn">取消订单</button>
+                            <button href="javascript:;" class="order-status-btn">付款</button>
+                        </div>
+                    </a>
+                </div>
+                <!-- 待发货 -->
+                <div class="order-item-box">
+                    <a href="javascript:;">
+                        <div class="flex_between flex_items">
+                            <span class="f22 c6">订单编号：201708225156284596</span>
+                            <span class="f22 status-color">等待仓库发货</span>
+                        </div>
+                        <div class="flex_start ptb20 bbe9">
+                            <img class="order-shop-img" src="../images/shop_banner.png" alt="">
+                            <div class="flex1">
+                                <h4 class="clamp2 f28 c3">郎酒 (langjiu)郎牌郎酒酱香型53度整箱 装500ml *6瓶 传世酱香 重...</h4>
+                                <div class="flex_end flex_items mt30"><span class="f22 c3 mr30">共1件商品</span><span class="f22 c3">实付：<strong class="order-price">¥ 1685.00</strong></span></div>
+                            </div>
+                        </div>
+                        <div class="flex_end flex_items">
+                            <button href="javascript:;" class="order-status-btn" onclick="applyRefund()">申请退款</button>
+                        </div>
+                    </a>
+                </div>
+                <!-- 待收货 -->
+                <div class="order-item-box">
+                    <a href="javascript:;">
+                        <div class="flex_between flex_items">
+                            <span class="f22 c6">订单编号：201708225156284596</span>
+                            <span class="f22 status-color">等待确认收货</span>
+                        </div>
+                        <div class="flex_start ptb20 bbe9">
+                            <img class="order-shop-img" src="../images/shop_banner.png" alt="">
+                            <div class="flex1">
+                                <h4 class="clamp2 f28 c3">郎酒 (langjiu)郎牌郎酒酱香型53度整箱 装500ml *6瓶 传世酱香 重...</h4>
+                                <div class="flex_end flex_items mt30"><span class="f22 c3 mr30">共1件商品</span><span class="f22 c3">实付：<strong class="order-price">¥ 1685.00</strong></span></div>
+                            </div>
+                        </div>
+                        <div class="flex_end flex_items">
+                            <button href="javascript:;" class="order-status-btn">查看物流</button>
+                            <button href="javascript:;" class="order-status-btn order-status-sure">确认收货</button>
+                        </div>
+                    </a>
+                </div>
+                <!-- 已完成 -->
+                <div class="order-item-box">
+                    <a href="javascript:;">
+                        <div class="flex_between flex_items">
+                            <span class="f22 c6">订单编号：201708225156284596</span>
+                            <span class="f22 status-color">交易完成</span>
+                        </div>
+                        <div class="flex_start ptb20 bbe9">
+                            <img class="order-shop-img" src="../images/shop_banner.png" alt="">
+                            <div class="flex1">
+                                <h4 class="clamp2 f28 c3">郎酒 (langjiu)郎牌郎酒酱香型53度整箱 装500ml *6瓶 传世酱香 重...</h4>
+                                <div class="flex_end flex_items mt30"><span class="f22 c3 mr30">共1件商品</span><span class="f22 c3">实付：<strong class="order-price">¥ 1685.00</strong></span></div>
+                            </div>
+                        </div>
+                        <div class="flex_end flex_items">
+                            <button href="javascript:;" class="default-order-btn order-status-btn">申请售后</button>
+                            <button href="javascript:;" class="order-status-btn">立即评价</button>
+                        </div>
+                    </a>
+                </div>
+                <!-- 售后 -->
+                <div class="order-item-box">
+                    <a href="javascript:;">
+                        <div class="flex_between flex_items">
+                            <span class="f22 c6">订单编号：201708225156284596</span>
+                            <span class="f22 status-color">已完成</span>
+                        </div>
+                        <div class="flex_start ptb20 bbe9">
+                            <img class="order-shop-img" src="../images/shop_banner.png" alt="">
+                            <div class="flex1">
+                                <h4 class="clamp2 f28 c3">郎酒 (langjiu)郎牌郎酒酱香型53度整箱 装500ml *6瓶 传世酱香 重...</h4>
+                                <div class="flex_end flex_items mt30"><span class="f22 c3 mr30">共1件商品</span><span class="f22 c3">实付：<strong class="order-price">¥ 1685.00</strong></span></div>
+                            </div>
+                        </div>
+                        <div class="flex_end flex_items">
+                            <button href="javascript:;" class="default-order-btn order-status-btn no-margin-right">查看详情</button>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-g hide"></div>
+    <div class="order-refund-content hide">
+        <div class="refund-tit">申请退款</div>
+        <img class="refund-modal-close" src="../images/close_icon.png" alt="">
+        <div class="flex_start flex_items refund-remark-box">
+            <label class="f32 c3">退款原因：</label>
+            <input class="flex1" type="text" placeholder="请输入原因" />
+        </div>
+        <a href="javascript:;" class="sure-refund-btn">确定</a>
+    </div>
+
+
+    <script type="text/javascript" src="../js/jquery-2.1.4.js"></script>
+    <script type="text/javascript" src="../js/jquery-weui.js"></script>
+    <script>
+
+        // 订单类型切换
+        $('body').find('.order-status-box').on('click', 'div', function() {
+            $(this).addClass('on').siblings().removeClass('on');
+        });
+
+        // 申请退款
+        function applyRefund() {
+            $('body').find('.order-refund-content').removeClass('hide').prev().removeClass('hide');
+        }
+
+        // 关闭弹框
+        $('body').find('.order-refund-content').on('click', 'img.refund-modal-close', function() {
+            $(this).parent().addClass('hide').prev().addClass('hide');
+        })
+        $('body').find('.order-refund-content').on('click', 'a.sure-refund-btn', function() {
+            $(this).parent().addClass('hide').prev().addClass('hide');
+        })
+    </script>
+</body>
+</html>

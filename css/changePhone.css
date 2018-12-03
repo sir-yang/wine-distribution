@@ -1,0 +1,51 @@
+
+.page_prompt {
+	padding-left: .3rem;
+	line-height: 1rem;
+	font-size: .3rem;
+	color: #666;
+}
+
+.phone-call {
+	height: .88rem;
+	background: #fff;
+	padding-left: .3rem;
+	border-bottom: 1px solid #e9e9e9; 
+}
+.phone-call label {
+	font-size: .28rem;
+	color: #333;
+	margin-right: .35rem;
+}
+.phone-call input {
+	flex: 1;
+	line-height: .88rem;
+	border: none;
+	font-size: .28rem;
+	color: #333;
+	outline: none;
+}
+
+.get-code-btn {
+	display: block;
+	width: 2rem;
+	line-height: .88rem;
+	font-size: .28rem;
+	text-align: center;
+	border-left: 1px solid #e9e9e9;
+}
+
+.next-change-phone-btn {
+	display: block;
+	height: .88rem;
+	margin: 1rem .3rem 0;
+	background: #dd0a35;
+	-webkit-border-radius: .22rem;
+	-moz-border-radius: .22rem;
+	-o-border-radius: .22rem;
+	border-radius: .22rem;
+	text-align: center;
+	line-height: .88rem;
+	font-size: .36rem;
+	color: #fff;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/weui.css">
+    <link rel="stylesheet" href="../css/jquery-weui.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/changePhone.css">
+    <script src="../js/setFontSize.js"></script>
+	<title>编辑资料</title>
+</head>
+<body>
+
+    <div class="page">
+        <div class="page__bd" style="height: 100%;">
+            <div class="page_prompt">填写新的手机号</div>
+            <div class="flex_start flex_items phone-call">
+                <label>手机号码</label>
+                <input type="number" name="phone" maxlength="15" placeholder="手机号码" />
+            </div>
+            <div class="flex_start flex_items phone-call">
+                <label>验证码</label>
+                <input type="text" name="code" maxlength="8" placeholder="短信验证码">
+                <a href="javascript:;" class="get-code-btn c3">获取验证码</a>
+                <!-- <a href="javascript:;" class="get-code-btn c9">重新获取(60s)</a> -->
+            </div>
+
+            <a href="javascript:;" class="next-change-phone-btn">下一步</a>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="../js/jquery-2.1.4.js"></script>
+    <script type="text/javascript" src="../js/jquery-weui.js"></script>
+    <script>
+        $('body').on('click', 'a.next-change-phone-btn', function() {
+            var phone = $('input[name=phone]').val();
+            var code = $('input[name=code]').val();
+            if (phone == "" || phone.length == 0 || !phone) {
+                $.toptip('手机号不能为空', 1000, 'warning');
+                return false;
+            }
+            if (phone.length < 11) {
+                $.toptip('手机格式错误', 1000, 'warning');
+                return false;
+            }
+            if (code == "" || code.length == 0 || !code) {
+                $.toptip('验证码不能为空', 1000, 'warning');
+                return false;
+            }
+        });
+    </script>
+</body>
+</html>

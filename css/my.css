@@ -53,7 +53,9 @@
 
 
 .me-content-box {
+	position: relative;
 	padding: 0 .2rem;
+	margin-top: -.35rem;
 }
 .me-order-status-box {
 	padding: 0 .2rem;
@@ -62,6 +64,17 @@
 	-moz-border-radius: .22rem;
 	-o-border-radius: .22rem;
 	border-radius: .22rem;
+	-webkit-box-shadow: 0 0 .1rem 0 rgba(230, 32, 63, .09);
+	-moz-box-shadow: 0 0 .1rem 0 rgba(230, 32, 63, .09);
+	-o-box-shadow: 0 0 .1rem 0 rgba(230, 32, 63, .09);
+	box-shadow: 0 0 .1rem 0 rgba(230, 32, 63, .09);
+}
+
+.me-order-status-box > a {
+	display: block;
+	padding-top: .4rem;
+	padding-bottom: .3rem; 
+	border-bottom: 1px solid #e9e9e9;
 }
 
 .more-order-img {
@@ -69,4 +82,97 @@
 	width: .14rem;
 	height: .26rem;
 	margin-left: .3rem;
+}
+
+.status-img-box {
+	position: relative;
+	width: .44rem;
+	height: .44rem;
+	margin: auto;
+	margin-bottom: .15rem;
+}
+
+.status-img-box > img {
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.status-img-box .wait_pay_icon {
+	width: .4rem;
+	height: .37rem;
+}
+.status-img-box .wait_ship_icon {
+	width: .42rem;
+	height: .39rem;
+}
+.status-img-box .wait_receipt_icon {
+	width: .43rem;
+	height: .36rem;
+}
+.status-img-box .finish_icon {
+	width: .37rem;
+	height: .44rem;
+}
+.status-img-box .after_sale_icon {
+	width: .43rem;
+	height: .37rem;
+}
+.status-img-box > span {
+	position: absolute;
+	top: -.1rem;
+	right: -.13rem;
+	z-index: 5;
+	min-width: .26rem;
+	padding: 0 2px;
+	box-sizing: border-box;
+	text-align: center;
+	background: #fff;
+	font-size: .2rem;
+	color: #dd0a35;
+	line-height: .26rem;
+	border: 1px solid #dd0a35;
+	-webkit-border-radius: .13rem;
+	-moz-border-radius: .13rem;
+	-o-border-radius: .13rem;
+	border-radius: .13rem;
+}
+.status-img-box + span {
+	display: block;
+	text-align: center;
+	font-size: .24rem;
+	color: #333;
+}
+
+.me-navigator-box {
+	margin-top: .2rem;
+	background: #fff;
+	padding: 0 .2rem;
+	-webkit-border-radius: .22rem;
+	-moz-border-radius: .22rem;
+	-o-border-radius: .22rem;
+	border-radius: .22rem;
+	-webkit-box-shadow: 0 0 .1rem 0 rgba(230, 32, 63, .09);
+	-moz-box-shadow: 0 0 .1rem 0 rgba(230, 32, 63, .09);
+	-o-box-shadow: 0 0 .1rem 0 rgba(230, 32, 63, .09);
+	box-shadow: 0 0 .1rem 0 rgba(230, 32, 63, .09);
+}
+
+.me-navigator-box > a {
+	display: block;
+	height: 1rem;
+	border-bottom: 1px solid #e9e9e9;
+}
+.me-navigator-box > a:last-child {
+	border-bottom: none;
+}
+.me-navigator-box > a > div {
+	height: 100%;
+	font-size: .28rem;
+	color: #333;
+}
+.me-navigator-box > a > div img {
+	width: .14rem;
+	height: .26rem;
 }

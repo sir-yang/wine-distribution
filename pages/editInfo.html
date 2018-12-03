@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/weui.css">
+    <link rel="stylesheet" href="../css/jquery-weui.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/editInfo.css">
+    <script src="../js/setFontSize.js"></script>
+	<title>编辑资料</title>
+</head>
+<body>
+
+    <div class="page">
+        <div class="page__bd" style="height: 100%;">
+            <div class="weui-cells">
+                <a class="weui-cell weui-cell_access" href="javascript:;">
+                    <div class="weui-cell__bd">
+                      <p>头像</p>
+                    </div>
+                    <div class="weui-cell__ft">
+                        <img src="../images/comment-head.png" alt="">
+                    </div>
+                </a>
+                <a class="weui-cell weui-cell_access" href="javascript:;">
+                    <div class="weui-cell__bd">
+                      <p>真实姓名</p>
+                    </div>
+                    <div class="weui-cell__ft">周星星</div>
+                </a>
+                <a class="weui-cell weui-cell_access" href="javascript:;" onclick="chooseSex(this)">
+                    <div class="weui-cell__bd">
+                      <p>性别</p>
+                    </div>
+                    <div class="weui-cell__ft">男</div>
+                </a>
+                <a class="weui-cell weui-cell_access" href="changePhone.html">
+                    <div class="weui-cell__bd">
+                      <p>手机号</p>
+                    </div>
+                    <div class="weui-cell__ft">18628805420</div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="../js/jquery-2.1.4.js"></script>
+    <script type="text/javascript" src="../js/jquery-weui.js"></script>
+    <script type="text/javascript">
+
+        // 选择性别
+        function chooseSex(e) {
+            $.actions({
+                title: '选择性别',
+                actions: [{
+                    text: "男",
+                    onClick: function() {
+                       $(e).find('.weui-cell__ft').html('男');
+                    }
+                },{
+                    text: "女",
+                    onClick: function() {
+                      $(e).find('.weui-cell__ft').html('女');
+                    }
+                }]
+            });
+        }
+    </script>
+</body>
+</html>

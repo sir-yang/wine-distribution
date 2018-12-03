@@ -39,7 +39,7 @@
             <div class="me-content-box">
                 <div class="me-order-status-box">
                     <a href="javascript:;">
-                        <div class="flex_between flex_items bbe9">
+                        <div class="flex_between flex_items">
                             <span class="f28 c0">我的订单</span>
                             <div class="flex_start flex_items">
                                 <span class="f24 c9">全部订单</span>
@@ -47,44 +47,87 @@
                             </div>
                         </div>
                     </a>
-                    <div class="flex_around">
+                    <div class="flex_around ptb30">
                         <div>
                             <div class="status-img-box">
-                                <img src="../images/wait_pay_icon.png" alt="">
-                                <span class="status-bubble">12</span>
+                                <img class="wait_pay_icon" src="../images/wait_pay_icon.png" alt="">
+                                <span class="status-bubble">4</span>
                             </div>
                             <span>待付款</span>
                         </div>
                         <div>
                             <div class="status-img-box">
-                                <img src="../images/wait_ship_icon.png" alt="">
+                                <img class="wait_ship_icon" src="../images/wait_ship_icon.png" alt="">
                                 <span class="status-bubble">12</span>
                             </div>
-                            <span>待付款</span>
+                            <span>待发货</span>
                         </div>
                         <div>
                             <div class="status-img-box">
-                                <img src="../images/wait_receipt_icon.png" alt="">
-                                <span class="status-bubble">12</span>
+                                <img class="wait_receipt_icon" src="../images/wait_receipt_icon.png" alt="">
+                                <span class="status-bubble">1</span>
                             </div>
-                            <span>待付款</span>
+                            <span>待收货</span>
                         </div>
                         <div>
                             <div class="status-img-box">
-                                <img src="../images/finish_icon.png" alt="">
-                                <span class="status-bubble">12</span>
+                                <img class="finish_icon" src="../images/finish_icon.png" alt="">
                             </div>
-                            <span>待付款</span>
+                            <span>已完成</span>
                         </div>
                         <div>
                             <div class="status-img-box">
-                                <img src="../images/after_sale_icon.png" alt="">
-                                <span class="status-bubble">12</span>
+                                <img class="after_sale_icon" src="../images/after_sale_icon.png" alt="">
+                                <span class="status-bubble">1</span>
                             </div>
-                            <span>待付款</span>
+                            <span>退款/售后</span>
                         </div>
                     </div>
                 </div>
+
+                <div class="me-navigator-box">
+                    <a href="javascript:;">
+                        <div class="flex_between flex_items">
+                            <label>收货地址</label>
+                            <img src="../images/right_icon.png" alt="">
+                        </div>
+                    </a>
+                    <a href="javascript:;">
+                        <div class="flex_between flex_items">
+                            <label>品酒免费</label>
+                            <img src="../images/right_icon.png" alt="">
+                        </div>
+                    </a>
+                    <a href="javascript:;">
+                        <div class="flex_between flex_items">
+                            <label>折价退货</label>
+                            <img src="../images/right_icon.png" alt="">
+                        </div>
+                    </a>
+                    <a href="javascript:;">
+                        <div class="flex_between flex_items">
+                            <label>联系客服</label>
+                            <img src="../images/right_icon.png" alt="">
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="tabbar-spacing"></div>
+            <div class="weui-tabbar">
+                <a href="#tab1" class="weui-tabbar__item">
+                    <span class="weui-badge" style="position: absolute;top: -.4em;right: 1em;">8</span>
+                    <div class="weui-tabbar__icon"></div>
+                    <p class="weui-tabbar__label">首页</p>
+                </a>
+                <a href="#tab2" class="weui-tabbar__item">
+                    <div class="weui-tabbar__icon"></div>
+                    <p class="weui-tabbar__label">购物车</p>
+                </a>
+                <a href="#tab3" class="weui-tabbar__item weui-bar__item--on">
+                    <div class="weui-tabbar__icon"></div>
+                    <p class="weui-tabbar__label">我的</p>
+                </a>
             </div>
         </div>
     </div>
