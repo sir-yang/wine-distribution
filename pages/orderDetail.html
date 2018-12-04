@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/weui.css">
+    <link rel="stylesheet" href="../css/jquery-weui.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/orderDetail.css">
+    <script src="../js/setFontSize.js"></script>
+    <title>订单详情</title>
+</head>
+<body>
+
+    <div class="page">
+        <div class="page__bd" style="height: 100%;">
+            <!-- 等待付款 -->
+            <div class="order-detail-status-box flex_start hide">
+                <img class="order-status-icon flex_shrink" src="../images/order_wait_pay_icon.png" alt="">
+                <div class="flex1">
+                    <p class="f32 cf">等待买家付款</p>
+                    <span>请于23时59分38秒内完成支付，超时订单将自动关闭</span>
+                </div>
+            </div>
+            <!-- 等待收货 -->
+            <div class="order-detail-status-box flex_start hide" style="height: 1.2rem;">
+                <img class="order-status-icon flex_shrink" src="../images/order_wait_receipt_icon.png" alt="">
+                <div class="flex1">
+                    <p class="f32 cf">等待买家收货</p>
+                </div>
+            </div>
+            <!-- 已完成 -->
+            <div class="order-detail-status-box flex_start" style="height: 1.2rem;">
+                <img class="order-status-icon flex_shrink" src="../images/order_finish_icon.png" alt="">
+                <div class="flex1">
+                    <p class="f32 cf">订单已完成</p>
+                </div>
+            </div>
+            <div class="delivery-info flex_between flex_items">
+                <div class="">
+                    <p>快递公司：顺丰快递</p>
+                    <p class="mt10">快递单号：1001011111</p>
+                </div>
+                <img src="../images/right_icon.png" alt="">
+            </div>
+
+            <div class="user-info">
+                <div class="flex_between flex_items">
+                    <div>收货人：周星星</div>
+                    <div>18628805420</div>
+                </div>
+                <div class="mt10">收货地址：四川省成都市金牛区九里堤南路</div>
+            </div>
+
+            <div class="order-info">
+                <p>订单编号：201708225156284596</p>
+                <p>下单时间：2018-11-06  09:51</p>
+                <div class="flex_start">
+                    <label class="flex_shrink">留&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;言：</label>
+                    <span>你好等待买家付款等待买家付款等待买家付款款款款款款款款款款款</span>
+                </div>
+            </div>
+
+            <div class="order-shop-count">
+                <div class="flex_between flex_items">
+                    <span>商品总额</span>
+                    <span>¥1680.00</span>
+                </div>
+                <div class="flex_between flex_items">
+                    <span>商品数</span>
+                    <span>x1</span>
+                </div>
+                <div class="flex_between flex_items">
+                    <span>运费</span>
+                    <span>¥5.00</span>
+                </div>
+
+                <div class="flex_end">
+                    <span>合计：</span>
+                    <span class="total_price">¥ 1685.00</span>
+                </div>
+            </div>
+            
+            <div class="order-detail-shop-info">
+                <div class="shop-item-info flex_start">
+                    <img class="shop-img flex_shrink" src="../images/shop_banner.png" alt="">
+                    <div class="txt-info">
+                        <h4 class="clamp2 f28 c3">郎酒  (langjiu)郎牌郎酒酱香型53度整箱 装500ml *6瓶 传世酱香 重...</h4>
+                        <div class="flex_between flex_items mt30">
+                            <span class="shop-num">x1</span>
+                            <span class="shop-price">¥ 1680.00</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- 等待付款 -->
+                <div class="flex_end flex_items hide">
+                    <button class="default-order-btn order-status-btn">取消订单</button>
+                    <button href="javascript:;" class="order-status-btn">立即支付</button>
+                </div>
+                <!-- 等待收货 -->
+                <div class="flex_end flex_items hide">
+                    <button onclick="self.location.href='logisticsInfo.html'" class="default-order-btn order-status-btn">查看物流</button>
+                    <button class="order-status-btn">确认收货</button>
+                </div>
+                <!-- 已完成 -->
+                <div class="flex_end flex_items">
+                    <button onclick="self.location.href='evaluation.html'" class="default-order-btn order-status-btn no-margin-right">立即评价</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script type="text/javascript" src="../js/jquery-2.1.4.js"></script>
+    <script type="text/javascript" src="../js/jquery-weui.js"></script>
+</body>
+</html>

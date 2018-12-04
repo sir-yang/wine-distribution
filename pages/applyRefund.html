@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/weui.css">
+    <link rel="stylesheet" href="../css/jquery-weui.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/applyRefund.css">
+    <script src="../js/setFontSize.js"></script>
+    <title>申请退款</title>
+</head>
+<body>
+
+    <div class="page">
+        <div class="page__bd" style="height: 100%;">
+            <div class="refund-shop-info flex_start">
+                <img class="flex_shrink" src="../images/shop_banner.png" alt="">
+                <div>
+                    <h4 class="f28 c3 clamp2">郎酒  (langjiu)郎牌郎酒酱香型53度整箱 装500ml *6瓶 传世酱香 重...</h4>
+                    <div class="flex_between flex_items mt20">
+                        <label class="f28 c6">退款数量</label>
+                        <div class="flex_start flex_items refund-num-box">
+                            <i>-</i>
+                            <input type="number" value="1" />
+                            <i>+</i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="refund-reason flex_between flex_items">
+                <label>退款原因</label>
+                <div class="flex_start flex_items">
+                    <span class="f28 c9">请选择</span>
+                    <img class="right-icon" src="../images/right_icon.png" alt="">
+                </div>
+            </div>
+
+            <div class="update-photo-box">
+                <div class="f30 c3 pl30">上传图片<span class="f24 c9">(最多上传6张)</span></div>
+                <div class="photo-box flex_warp">
+                    <!-- <div class="img-box">
+                        <img src="../images/shop_banner.png" alt="">
+                        <span>X</span>
+                    </div> -->
+                    <img class="add-photo-icon no-update-photo" src="../images/add_img_icon.png" alt="">
+                </div>
+            </div>
+
+            <a href="javascript:;" class="submit-comment-btn">提交</a>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="../js/jquery-2.1.4.js"></script>
+    <script type="text/javascript" src="../js/jquery-weui.js"></script>
+    <script>
+
+        $('body').on('click', 'div.refund-reason', function() {
+            $.actions({
+                actions: [{
+                    text: "退运费",
+                    onClick: function() {
+                       $('.refund-reason').find('span').html('退运费');
+                    }
+                },{
+                    text: "与商品描述不符",
+                    onClick: function() {
+                      $('.refund-reason').find('span').html('与商品描述不符');
+                    }
+                },{
+                    text: "包装/商品破损",
+                    onClick: function() {
+                      $('.refund-reason').find('span').html('包装/商品破损');
+                    }
+                },{
+                    text: "未按约定发货",
+                    onClick: function() {
+                      $('.refund-reason').find('span').html('未按约定发货');
+                    }
+                },{
+                    text: "其他",
+                    onClick: function() {
+                      $('.refund-reason').find('span').html('其他');
+                    }
+                }]
+            });  
+        })
+    </script>
+</body>
+</html>

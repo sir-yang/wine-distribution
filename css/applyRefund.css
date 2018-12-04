@@ -1,0 +1,117 @@
+.refund-shop-info {
+	padding: .3rem;
+	background: #fff;
+}
+.refund-shop-info > img {
+	display: block;
+	width: 1.6rem;
+	height: 1.6rem;
+	margin-right: .3rem;
+}
+
+.refund-num-box {
+	border: 1px solid #ddd;
+	-webkit-border-radius: .06rem;
+	-moz-border-radius: .06rem;
+	-o-border-radius: .06rem;
+	border-radius: .06rem;
+}
+.refund-num-box i {
+	display: inline-block;
+	width: .6rem;
+	height: .6rem;
+	line-height: .6rem;
+	text-align: center;
+	font-size: .3rem;
+	color: #999;
+}
+.refund-num-box input {
+	display: inline-block;
+	width: .8rem;
+	line-height: .6rem;
+	border: none;
+	border-left: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+	font-size: .3rem;
+	color: #444;
+	text-align: center;
+}
+
+.refund-reason {
+	margin-top: .2rem;
+	padding: 0 .3rem;
+	height: .88rem;
+	background: #fff;
+}
+.refund-reason img.right-icon {
+	display: block;
+	width: .14rem;
+	height: .26rem;
+	margin-left: .2rem;
+}
+
+.update-photo-box {
+	margin-top: .2rem;
+	padding-top: .3rem;
+	background: #fff;
+}
+.update-photo-box .photo-box {
+	padding: .3rem;
+}
+.photo-box .img-box {
+	position: relative;
+	width: 2.1rem;
+	height: 2.1rem;
+	margin-top: .3rem;
+	margin-right: .3rem;
+}
+.photo-box .img-box:nth-child(3n) {
+	margin-right: 0;
+}
+.photo-box .img-box img {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.photo-box .img-box span {
+	position: absolute;
+	top: -.15rem;
+	right: -.15rem;
+	z-index: 1;
+	display: block;
+	width: .3rem;
+	height: .3rem;
+	background: #fff;
+	font-size: .2rem;
+	color: red;
+	text-align: center;
+	line-height: .3rem;
+	border: 1px solid #e9e9e9;
+	-webkit-border-radius: 100%;
+	-moz-border-radius: 100%;
+	-o-border-radius: 100%;
+	border-radius: 100%;
+}
+.photo-box img.add-photo-icon {
+	width: 1.4rem;
+	height: 1.4rem;
+	margin-top: .65rem;
+	margin-left: .35rem;
+}
+.photo-box img.add-photo-icon.no-update-photo {
+	margin-left: 0;
+}
+
+.submit-comment-btn {
+	display: block;
+	margin: 1.15rem .3rem 0;
+	line-height: .88rem;
+	text-align: center;
+	font-size: .36rem;
+	color: #fff;
+	background: #dd0a35;
+	-webkit-border-radius: .22rem;
+	-moz-border-radius: .22rem;
+	-o-border-radius: .22rem;
+	border-radius: .22rem;
+}

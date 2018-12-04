@@ -1,0 +1,33 @@
+.order-detail-status-box {
+	height: 1.4rem;
+	padding: .3rem .3rem 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+	background: url('../images/order_detail_bg.png') no-repeat;
+	background-size: cover;
+	background-position: bottom;
+}
+.order-detail-status-box .order-status-icon {
+	display: block;
+	width: .28rem;
+	height: .28rem;
+	margin: .14rem .3rem 0 0;
+}
+.order-detail-status-box span {
+	display: block;
+	font-size: .2rem;
+	color: #fff;
+	opacity: .6;
+}
+
+.shop-info-box {
+	padding: .3rem;
+}
+.shop-info-box img {
+	display: block;
+	width: 1.6rem;
+	height: 1.6rem;
+	margin-right: .3rem;
+}
