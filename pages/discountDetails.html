@@ -46,14 +46,38 @@
                 <div class="mt30 bte9 pt30">
                     <div class="flex_end f28 c3">合计：<span class="color">¥ 1685.00</span></div>
                     <div class="flex_end">
-                        <a href="javascript:;" class="order-status-btn">填写物流</a>
+                        <a href="javascript:;" class="order-status-btn" onclick="applyRefund()">填写物流</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
+    <div class="modal-g hide"></div>
+    <div class="order-refund-content hide">
+        <div class="refund-tit">填写物流</div>
+        <img class="refund-modal-close" src="../images/close_icon.png" alt="">
+        <div class="flex_start flex_items refund-remark-box">
+            <input class="flex1" type="text" placeholder="请输入物流单号" />
+        </div>
+        <a href="javascript:;" class="sure-refund-btn">确定</a>
+    </div>
+
     <script type="text/javascript" src="../js/jquery-2.1.4.js"></script>
     <script type="text/javascript" src="../js/jquery-weui.js"></script>
+    <script>
+        // 填写物流
+        function applyRefund() {
+            $('body').find('.order-refund-content').removeClass('hide').prev().removeClass('hide');
+        }
+
+        // 关闭弹框
+        $('body').find('.order-refund-content').on('click', 'img.refund-modal-close', function() {
+            $(this).parent().addClass('hide').prev().addClass('hide');
+        })
+        $('body').find('.order-refund-content').on('click', 'a.sure-refund-btn', function() {
+            $(this).parent().addClass('hide').prev().addClass('hide');
+        })
+    </script>
 </body>
 </html>
