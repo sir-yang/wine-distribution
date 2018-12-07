@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/weui.css">
+    <link rel="stylesheet" href="../css/jquery-weui.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/applyWattle.css">
+    <script src="../js/setFontSize.js"></script>
+    <title>申请提现</title>
+</head>
+<body>
+
+    <div class="page">
+        <div class="page__bd" style="height: 100%;">
+            <div class="wattle-call-box">
+                <div class="wattle-call flex_between flex_items">
+                    <div class="wallet-left flex_start">
+                        <label>账户剩余金额：5.00元</label>
+                    </div>
+                    <div class="wattle-right flex_start flex_items" onclick="self.location.href='wattleRecord.html'">
+                        <span>记录明细</span>
+                        <img src="../images/wattle_right_icon.png" alt="">
+                    </div>
+                </div>
+                <div class="wattle-call flex_between flex_items">
+                    <div class="wallet-left flex_start">
+                        <label class="f32 color">¥</label>
+                        <input type="number" placeholder="输入提现金额" />
+                    </div>
+                    <div class="wattle-right flex_start flex_items">
+                        <span>全部提现</span>
+                    </div>
+                </div>
+                <div class="wattle-call flex_between flex_items bgcolor">
+                    <div class="wallet-left flex_start">
+                        <label>提现金额不能小于1.00元</label>
+                    </div>
+                    <div class="wattle-right flex_start flex_items"></div>
+                </div>
+                <div class="wattle-call flex_between flex_items">
+                    <div class="wallet-left flex_start">
+                        <label>提现方式</label>
+                        <div class="wattle-type">
+                            <img src="../images/wx_wattle_icon.png" alt="">
+                            <span>微信</span>
+                        </div>
+                    </div>
+                    <div class="wattle-right flex_start flex_items"></div>
+                </div>
+                <div class="wattle-call flex_between flex_items">
+                    <div class="wallet-left flex_start">
+                        <span class="mast">姓名</span>
+                        <i class="color">*</i>
+                        <input type="text" placeholder="请输入真实姓名" />
+                    </div>
+                    <div class="wattle-right flex_start flex_items"></div>
+                </div>
+                <div class="wattle-call flex_between flex_items">
+                    <div class="wallet-left flex_start">
+                        <span class="mast">账号</span>
+                        <i class="color">*</i>
+                        <input type="text" placeholder="请输入正确微信账号" />
+                    </div>
+                    <div class="wattle-right flex_start flex_items"></div>
+                </div>
+            </div>
+
+            <a href="javascript:;" class="submit-apply-btn">提交申请</a>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="../js/jquery-2.1.4.js"></script>
+    <script type="text/javascript" src="../js/jquery-weui.js"></script>
+</body>
+</html>

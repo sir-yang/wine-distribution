@@ -1,0 +1,93 @@
+
+.page-bg {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -5;
+	zoom: 1;
+	background-image: url('../images/invitation_card_bg.png');
+	background-repeat: no-repeat;
+	background-size: 100%; 
+	-webkit-background-size: 100%; 
+	-o-background-size: 100%; 
+	background-position: top;
+}
+.invitation-card-box {
+	position: relative;
+	padding-top: 1rem;
+}
+.card-my-info .card-head {
+	display: block;
+	width: 1rem;
+	height: 1rem;
+	margin: auto;
+	margin-bottom: .1rem;
+}
+.card-my-info span {
+	display: block;
+	text-align: center;
+	font-size: .32rem;
+	color: #fff;
+}
+
+.invitation-card-box .down-card-box {
+	position: absolute;
+	right: .5rem;
+	top: .9rem;
+}
+.down-card-box img {
+	display: block;
+	width: .4rem;
+	height: .4rem;
+	margin: auto;
+	margin-bottom: .05rem;
+}
+.down-card-box span {
+	display: block;
+	text-align: center;
+	font-size: .2rem;
+	color: #fff;
+}
+
+.invitation-card-box .invitation-card-icon {
+	display: block;
+	width: 5.07rem;
+	height: 3.75rem;
+	margin-top: .25rem;
+	margin-left: 1.56rem;
+}
+
+.invitation-card-box > p {
+	width: 4.5rem;
+	margin: auto;
+	font-size: .28rem;
+	color: #fff;
+	line-height: .48rem;
+	text-align: center;
+	text-indent: 2em;
+}
+
+
+.footer-QR-box {
+	margin-top: 1rem;
+}
+.footer__text {
+	text-align: center;
+}
+.QR-box {
+	width: 1.62rem;
+	height: 1.62rem;
+	margin: 0 auto .2rem;
+	background: #fff;
+}
+.footer__text p:first-child {
+	font-size: .32rem;
+	color: #fff;
+}
+.footer__text p:last-child {
+	font-size: .16rem;
+	color: #fff;
+	opacity: .7;
+}

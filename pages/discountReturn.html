@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/weui.css">
+    <link rel="stylesheet" href="../css/jquery-weui.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/discountReturn.css">
+    <script src="../js/setFontSize.js"></script>
+    <title>折价退货</title>
+</head>
+<body>
+
+    <div class="page">
+        <div class="page__bd" style="height: 100%;">
+            <div class="discount-top-wattle flex_between flex_items">
+                <div class="flex_column">
+                    <p class="f32 cf">可提现金额</p>
+                    <span class="f24 cf">5.00元</span>
+                </div>
+                <a href="applyWattle.html" class="wattle_btn">提现</a>
+            </div>
+
+            <div class="discount-desc plr30">
+                <h4>折价退款说明</h4>
+                <p>本商场购买满2件。则享受折扣退款，折价退款为原价的80%，须提交申请。最终解释权归本公司所有</p>
+                <span class="f28 c3">注：其他售后问题请联系客服</span>
+            </div>
+
+            <div class="discount-status-box flex_start flex_items">
+                <div class="on">订单</div>
+                <div>退货中</div>
+                <div>已完成</div>
+            </div>
+
+            <div class="discount-shop-list">
+                <div class="order-item-box">
+                    <div class="flex_start ptb20 bbe9">
+                        <img class="order-shop-img" src="../images/shop_banner.png" alt="">
+                        <div class="flex1">
+                            <h4 class="clamp2 f28 c3">郎酒 (langjiu)郎牌郎酒酱香型53度整箱 装500ml *6瓶 传世酱香 重...</h4>
+                            <div class="mt30 order-price">折价约  ¥ 1685.00</div>
+                        </div>
+                    </div>
+                    <div class="flex_end flex_items">
+                        <button class="default-order-btn order-status-btn" onclick="self.location.href='discountDetails.html'">查看详情</button>
+                        <button class="order-status-btn">提交申请</button>
+                    </div>
+                </div>
+                <div class="order-item-box">
+                    <div class="flex_between flex_items">
+                        <span class="f22 c6">申请时间：2018-11-06 19:17:35</span>
+                        <span class="f22 status-color">审核中...</span>
+                    </div>
+                    <div class="flex_start ptb20 bbe9">
+                        <img class="order-shop-img" src="../images/shop_banner.png" alt="">
+                        <div class="flex1">
+                            <h4 class="clamp2 f28 c3">郎酒 (langjiu)郎牌郎酒酱香型53度整箱 装500ml *6瓶 传世酱香 重...</h4>
+                            <div class="mt30 order-price">折价约  ¥ 1685.00</div>
+                        </div>
+                    </div>
+                    <div class="flex_end flex_items">
+                        <button class="default-order-btn order-status-btn no-margin-right">查看详情</button>
+                    </div>
+                </div>
+                <div class="order-item-box">
+                    <div class="flex_between flex_items">
+                        <span class="f22 c6">订单编号：201708225156284596</span>
+                        <span class="f22 status-color">待退货...</span>
+                    </div>
+                    <div class="flex_start ptb20 bbe9">
+                        <img class="order-shop-img" src="../images/shop_banner.png" alt="">
+                        <div class="flex1">
+                            <h4 class="clamp2 f28 c3">郎酒 (langjiu)郎牌郎酒酱香型53度整箱 装500ml *6瓶 传世酱香 重...</h4>
+                            <div class="mt30 order-price">折价约  ¥ 1685.00</div>
+                        </div>
+                    </div>
+                    <div class="flex_end flex_items">
+                        <button class="default-order-btn order-status-btn">查看详情</button>
+                        <button class="order-status-btn">填写物流</button>
+                    </div>
+                </div>
+                <div class="order-item-box">
+                    <div class="flex_between flex_items">
+                        <span class="f22 c6">申请时间：2018-11-06 19:17:35</span>
+                        <span class="f22 status-color">已完成</span>
+                    </div>
+                    <div class="flex_start ptb20 bbe9">
+                        <img class="order-shop-img" src="../images/shop_banner.png" alt="">
+                        <div class="flex1">
+                            <h4 class="clamp2 f28 c3">郎酒 (langjiu)郎牌郎酒酱香型53度整箱 装500ml *6瓶 传世酱香 重...</h4>
+                            <div class="mt30 order-price">折价约  ¥ 1685.00</div>
+                        </div>
+                    </div>
+                    <div class="flex_end flex_items">
+                        <button class="default-order-btn order-status-btn no-margin-right">查看详情</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="../js/jquery-2.1.4.js"></script>
+    <script type="text/javascript" src="../js/jquery-weui.js"></script>
+    <script>
+        $('body').find('.discount-status-box').on('click', 'div', function() {
+            $(this).addClass('on').siblings().removeClass('on');
+        })
+    </script>
+</body>
+</html>

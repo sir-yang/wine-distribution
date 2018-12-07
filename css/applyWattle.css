@@ -1,0 +1,82 @@
+
+.wattle-call {
+	position: relative;
+	padding: 0 .3rem;
+	background: #fff;
+	line-height: .88rem;
+	font-size: .28rem;
+	color: #333;
+}
+.wattle-call::after {
+	display: block;
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: .3rem;
+	right: .3rem;
+	height: 1px;
+	background: #e9e9e9;
+}
+.wallet-left {
+	flex: 1;
+	margin-right: .3rem;
+}
+.wallet-left input {
+	flex: 1;
+	margin-left: .3rem;
+	line-height: .88rem;
+	border: none;
+	color: #333;
+	outline: none;
+}
+.wallet-left .wattle-type {
+	margin-left: .4rem;
+}
+.wallet-left .wattle-type img {
+	width: .34rem;
+	height: .27rem;
+}
+/*.wallet-left span.mask {
+	position: relative;
+}
+.wallet-left span.mask::before {
+	display: block;
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	font-size: .32rem;
+}*/
+
+.wattle-right span {
+	font-size: .28rem;
+	color: #e42c15;
+}
+.wattle-right img {
+	display: block;
+	width: .14rem;
+	height: .26rem;
+	margin-left: .3rem;
+}
+
+.submit-apply-btn {
+	display: block;
+	margin: 1rem .3rem .2rem;
+	background: #dd0a35;
+	-webkit-border-radius: .22rem;
+	-moz-border-radius: .22rem;
+	-o-border-radius: .22rem;
+	border-radius: .22rem;
+	font-size: .36rem;
+	color: #fff;
+	text-align: center;
+	line-height: .88rem;
+}
+
+
+.color {
+	color: #e42c15;
+}
+.bgcolor {
+	background: #f6f6f6!important;
+}

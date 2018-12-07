@@ -1,6 +1,5 @@
 
 /* box布局 */
-
 .flex_start {
     display: -webkit-flex;
     display: flex;
@@ -172,6 +171,9 @@
 
 .p30 {
 	padding: .3rem;
+}
+.pt30 {
+	padding-top: .3rem;
 }
 .plr30 {
 	padding-left: .3rem;

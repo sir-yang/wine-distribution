@@ -1,0 +1,36 @@
+.address-item-box {
+	position: relative;
+	padding: .3rem .05rem .3rem .3rem;
+	background: #fff;
+	margin-bottom: .2rem;
+}
+.address-item-box::after {
+	display: block;
+	content: '';
+	position: absolute;
+	top: .4rem;
+	right: 1.07rem;
+	width: 1px;
+	height: .67rem;
+	background: #e9e9e9;
+}
+.address-item-box .address-right {
+	display: block;
+	padding: .25rem;
+	font-size: .24rem;
+	color: #666;
+}
+
+.add-address-btn {
+	display: block;
+	margin: 1rem .3rem 0;
+	background: #1db219;
+	-webkit-border-radius: .22rem;
+	-moz-border-radius: .22rem;
+	-o-border-radius: .22rem;
+	border-radius: .22rem;
+	line-height: .88rem;
+	text-align: center;
+	font-size: .36rem;
+	color: #fff;
+}

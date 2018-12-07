@@ -1,0 +1,76 @@
+
+.address-box .weui-cells {
+	margin-top: 0;
+	margin-bottom: 1rem;
+}
+.address-box .weui-cells .weui-cell {
+	padding: 0 .3rem;
+	height: .88rem;
+}
+.address-box .weui-cell__bd {
+	position: relative;
+}
+.address-box .weui-cell__hd label {
+	width: 1.7rem;
+	font-size: .28rem;
+	color: #333;
+}
+
+.address-box .weui-cell__bd input {
+	height: .88rem;
+	line-height: .88rem;
+	border: none;
+	outline: none;
+	font-size: .28rem;
+	color: #333;
+}
+
+.weui-cell__bd .right-icon {
+	display: block;
+	width: .14rem;
+	height: .26rem;
+	margin-left: .3rem;
+}
+.weui-cell__bd span {
+	display: inline-block;
+	margin-left: 1rem;
+	font-size: .28rem;
+	color: #333;
+}
+.weui-cell__bd .flex1 span:first-child {
+	margin-left: 0;
+}
+
+.weui-cell__bd #city-picker {
+	position: absolute;
+	top: -9px;
+	left: 0;
+	right: 0;
+	bottom: -9px;
+	width: 100%;
+	opacity: 0;
+}
+
+.save-address-btn {
+	display: block;
+	margin: 0 .3rem;
+	-webkit-border-radius: .22rem;
+	-moz-border-radius: .22rem;
+	-o-border-radius: .22rem;
+	border-radius: .22rem;
+	line-height: .88rem;
+	background: #dd0a35;
+	text-align: center;
+	color: #fff;
+	font-size: .36rem;
+}
+
+.toolbar {
+	font-size: .36rem;
+}
+.toolbar .title {
+	font-size: .36rem;
+}
+.weui-picker-modal .picker-items {
+	font-size: .32rem;
+}

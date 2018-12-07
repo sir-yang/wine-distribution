@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/weui.css">
+    <link rel="stylesheet" href="../css/jquery-weui.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/freeWine.css">
+    <script src="../js/setFontSize.js"></script>
+    <title>品酒免费</title>
+</head>
+<body>
+
+    <div class="page">
+        <div class="page__bd" style="height: 100%;">
+            <div class="mine-top-box flex_start flex_items">
+                <div class="flex1" onclick="self.location.href='freeDesc.html'">
+                    <img src="../images/disclaimer_icon.png" alt="">
+                    <span>免费声明</span>
+                </div>
+                <div class="flex1" onclick="self.location.href='invitationCard.html'">
+                    <img src="../images/promotion_icon.png" alt="">
+                    <span>推广二维码</span>
+                </div>
+            </div>
+
+            <div class="wine-tab-box flex_start flex_items">
+                <div class="on">可免费订单</div>
+                <div>审核中</div>
+                <div>已免费订单</div>
+            </div>
+
+            <div class="wine-list-box">
+                <div class="wine-item-info">
+                    <div class="f22 c6">订单编号：201708225156284596</div>
+                    <div class="flex_start ptb20 bbe9">
+                        <img class="shop-img" src="../images/shop_banner.png" alt="">
+                        <div class="info-right">
+                            <h4 class="f28 c3 clamp2">郎酒  (langjiu)郎牌郎酒酱香型53度整箱 装500ml *6瓶 传世酱香 重...</h4>
+                            <span>¥ 1685.00</span>
+                        </div>
+                    </div>
+                    <div class="flex_between flex_items item-bottom-box">
+                        <span>邀请3人购买即可 免费品酒</span>
+                        <div class="flex_start">
+                            <img src="../images/wine_head.png" alt="">
+                            <img src="../images/wine_head.png" alt="">
+                            <img src="../images/wine_head.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="wine-item-info">
+                    <div class="f22 c6">订单编号：201708225156284596</div>
+                    <div class="flex_start ptb20 bbe9">
+                        <img class="shop-img" src="../images/shop_banner.png" alt="">
+                        <div class="info-right">
+                            <h4 class="f28 c3 clamp2">郎酒  (langjiu)郎牌郎酒酱香型53度整箱 装500ml *6瓶 传世酱香 重...</h4>
+                            <span>¥ 1685.00</span>
+                        </div>
+                    </div>
+                    <div class="flex_between flex_items item-bottom-box">
+                        <span>邀请3人购买即可 免费品酒</span>
+                        <div class="flex_start">
+                            <img src="../images/wine_head.png" alt="">
+                            <img src="../images/wine_head.png" alt="">
+                            <img src="../images/wine_head.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <!-- 审核中 -->
+                <div class="wine-item-info">
+                    <div class="f22 c6">订单编号：201708225156284596</div>
+                    <div class="flex_start ptb20 bbe9">
+                        <img class="shop-img" src="../images/shop_banner.png" alt="">
+                        <div class="info-right">
+                            <h4 class="f28 c3 clamp2">郎酒  (langjiu)郎牌郎酒酱香型53度整箱 装500ml *6瓶 传世酱香 重...</h4>
+                            <span>¥ 1685.00</span>
+                        </div>
+                    </div>
+                    <div class="flex_between flex_items item-bottom-box">
+                        <span>已完成，审核中...</span>
+                        <div class="flex_start">
+                            <img src="../images/wine_head.png" alt="">
+                            <img src="../images/wine_head.png" alt="">
+                            <img src="../images/wine_head.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <!-- 已免费 -->
+                <div class="wine-item-info">
+                    <div class="f22 c6">订单编号：201708225156284596</div>
+                    <div class="flex_start ptb20 bbe9">
+                        <img class="shop-img" src="../images/shop_banner.png" alt="">
+                        <div class="info-right">
+                            <h4 class="f28 c3 clamp2">郎酒  (langjiu)郎牌郎酒酱香型53度整箱 装500ml *6瓶 传世酱香 重...</h4>
+                            <span>¥ 1685.00</span>
+                        </div>
+                    </div>
+                    <div class="flex_between flex_items item-bottom-box">
+                        <span>11.6 17:42 金额已退回</span>
+                        <div class="flex_start">
+                            <img src="../images/wine_head.png" alt="">
+                            <img src="../images/wine_head.png" alt="">
+                            <img src="../images/wine_head.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="../js/jquery-2.1.4.js"></script>
+    <script type="text/javascript" src="../js/jquery-weui.js"></script>
+    <script>
+        $('body').find('.wine-tab-box').on('click', 'div', function() {
+            $(this).addClass('on').siblings().removeClass('on');
+        })
+    </script>
+</body>
+</html>
