@@ -3,7 +3,7 @@
         // 获取window 宽度
         // zepto实现 $(window).width()就是这么干的
         var winWidth = window.innerWidth;
-        // doc.documentElement.style.fontSize = (winWidth / 750) * 100 + 'px' ;
+        // doc.documentElement.style.fontSize = (winWidth / 750) * 100 + 'px';
 
         // 2016-01-13 订正
         // 750宽度以上进行限制 需要css进行配合
