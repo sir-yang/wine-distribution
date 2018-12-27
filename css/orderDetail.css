@@ -85,6 +85,16 @@
 	padding: .3rem .3rem .4rem;
 	background: #fff;
 }
+.order-detail-shop-info > div {
+	margin-top: .3rem;
+	padding-top: .3rem;
+	border-top: 1px dashed #e9e9e9;
+}
+.order-detail-shop-info > div:first-child {
+	margin-top: 0;
+	padding-top: 0;
+	border-top: none;
+}
 .shop-item-info {
 	background: #fff;
 }
@@ -105,7 +115,7 @@
 
 .order-detail-shop-info .order-status-btn {
 	width: 1.5rem;
-	margin-top: .4rem;
+	margin-top: .2rem;
 	border: 1px solid #dd0a35;
 	-webkit-border-radius: .12rem;
 	-moz-border-radius: .12rem;
@@ -117,6 +127,14 @@
 	text-align: center;
 	font-size: .26rem;
 	color: #dd0a35;
+}
+.order-status-btn img {
+	width: .26rem;
+	height: .26rem;
+	vertical-align: middle;
+}
+.order-status-btn span {
+	vertical-align: middle;
 }
 .order-detail-shop-info .default-order-btn {
 	margin-right: .2rem;
@@ -130,4 +148,108 @@
 }
 .order-detail-shop-info .no-margin-right {
 	margin-right: 0;
+}
+
+
+.order-detail-footer-spacing {
+	width: 100%;
+	height: 1.2rem;
+}
+.order-detail-footer {
+	position: fixed;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: #fff;
+	height: 1rem;
+	z-index: 1;
+}
+
+.order-detail-footer .footer_btn {
+	display: block;
+	width: 100%;
+	background: #dd0a35;
+	line-height: 1rem;
+	text-align: center;
+	font-size: .32rem;
+	color: #fff;
+}
+.order-detail-footer .footer_btn_1 {
+	background: #fa932a;
+}
+.order-detail-footer .footer_btn_2 {
+	background: -webkit-linear-gradient(rgba(247, 101, 131, .9), rgba(221, 10, 53, .9));
+	background: -moz-linear-gradient(rgba(247, 101, 131, .9), rgba(221, 10, 53, .9));
+	background: -o-linear-gradient(rgba(247, 101, 131, .9), rgba(221, 10, 53, .9));
+	background: linear-gradient(rgba(247, 101, 131, .9), rgba(221, 10, 53, .9));
+}
+
+
+.refund-reason-modal {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0, 0, 0, .5);
+	z-index: 99;
+}
+.refund-reason-modal-content {
+	position: fixed;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: #fff;
+	z-index: 100;
+}
+.modal-close-img {
+	position: absolute;
+	right: .3rem;
+	top: .2rem;
+	width: .44rem;
+	height: .44rem;
+}
+.modal-tit {
+	margin-top: .32rem;
+	margin-bottom: .2rem;
+	font-size: .3rem;
+	color: #333;
+	line-height: .5rem;
+	text-align: center;
+}
+.refund-reason-modal-content select {
+	display: block;
+	width: 6.9rem;
+	height: .88rem;
+	line-height: .88rem;
+	margin: 0 auto .2rem;
+	border: 1px solid #e9e9e9;
+	padding-left: .2rem;
+	font-size: .28rem;
+	color: #333;
+	outline: none;
+}
+
+.refund-reason-modal-content textarea {
+	width: 6.9rem;
+	height: 2rem;
+	margin: auto;
+	margin-left: .3rem;
+	padding: .1rem;
+	line-height: .36rem;
+	font-size: .24rem;
+	color: #666;
+	box-sizing: border-box;
+	border: 1px solid #e9e9e9;
+}
+
+.sure-refund-btn {
+	width: 100%;
+	height: .88rem;
+	margin-top: .3rem;
+	line-height: .88rem;
+	text-align: center;
+	font-size: .32rem;
+	color: #fff;
+	background: #dd0a35;
 }

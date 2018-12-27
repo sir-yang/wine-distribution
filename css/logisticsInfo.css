@@ -18,6 +18,77 @@
 	color: #e42c15;
 }
 
+.logistics-base-info {
+	padding: .3rem;
+	background: #fff;
+	border-bottom: 1px solid #e9e9e9;
+	font-size: .28rem;
+	color: #333;
+	line-height: .5rem;
+}
+.logistics-base-info label {
+	width: 1.4rem;
+	height: .5rem;
+	text-align: justify;
+	text-align-last
+}
+.logistics-base-info label::after {
+	content: '';
+	display: inline-block;
+	width: 100%;
+}
+
+.schedule-box {
+	padding: .77rem 0 .2rem;
+	background: #fff;
+}
+.schedule-box > div {
+	position: relative;
+}
+.schedule-box > div p {
+	font-size: .2rem;
+	color: #999;
+}
+.schedule-box > div.on p {
+	color: #dd0a35;
+}
+.schedule-box > div:nth-child(1) img {
+	display: block;
+	width: .48rem;
+	height: .45rem;
+	margin: auto;
+	margin-bottom: .17rem;
+}
+.schedule-box > div:nth-child(2) img {
+	display: block;
+	width: .39rem;
+	height: .42rem;
+	margin: auto;
+	margin-bottom: .22rem;
+}
+.schedule-box > div:nth-child(3) img {
+	display: block;
+	width: .37rem;
+	height: .44rem;
+	margin: auto;
+	margin-bottom: .21rem;
+}
+.schedule-box > div::after {
+	position: absolute;
+	top: .3rem;
+	left: .8rem;
+	display: block;
+	content: '';
+	width: 1.6rem;
+	height: 0;
+	border-top: 1px dashed #e9e9e9;
+}
+.schedule-box > div:last-child::after {
+	content: '';
+	width: 0;
+	height: 0;
+}
+
 
 /*跟单信息*/
 .logistics-info-box {

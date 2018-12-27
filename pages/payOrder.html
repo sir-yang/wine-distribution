@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/weui.css">
+    <link rel="stylesheet" href="../css/jquery-weui.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/payOrder.css">
+    <script src="../js/setFontSize.js"></script>
+    <title>订单支付</title>
+</head>
+<body>
+
+    <div class="page">
+        <div class="page__bd" style="height: 100%;">
+            <div class="order-info">
+                <p>订单编号：201708225156284596</p>
+                <p>下单时间：2018-11-06  09:51</p>
+                <div class="flex_start">
+                    <label class="flex_shrink">留&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;言：</label>
+                    <span>你好等待买家付款等待买家付款等待买家付款款款款款款款款款款款</span>
+                </div>
+            </div>
+
+            <div class="order-shop-count">
+                <div class="flex_between flex_items">
+                    <span>商品总额</span>
+                    <span>¥1680.00</span>
+                </div>
+                <div class="flex_between flex_items">
+                    <span>优惠金额</span>
+                    <span>0.00</span>
+                </div>
+                <div class="flex_between flex_items">
+                    <span>运费</span>
+                    <span>¥5.00</span>
+                </div>
+
+                <div class="flex_end">
+                    <span>合计：</span>
+                    <span class="total_price">¥ 1685.00</span>
+                </div>
+            </div>
+
+            <div class="pay-type-box">
+                <div class="f28 c3 ptb30">惠酒商城支付</div>
+                <div class="pay-item on flex_between flex_items bte9 ptb30">
+                    <div class="flex1 flex_start flex_items">
+                        <img src="../images/wx_wattle_icon.png" alt="">
+                        <div>微信支付</div>
+                    </div>
+                    <i class="weui-icon-success"></i>
+                </div>
+                <div class="pay-item flex_between flex_items bte9 ptb30">
+                    <div class="flex1 flex_start flex_items">
+                        <img src="../images/balance_icon.png" alt="">
+                        <div>余额支付</div>
+                    </div>
+                    <i class="weui-icon-circle"></i>
+                </div>
+            </div>
+
+            <a href="javascript:;" class="pay-btn">立即支付 1685.00</a>
+        </div>
+    </div>
+
+
+    <script type="text/javascript" src="../js/jquery-2.1.4.js"></script>
+    <script type="text/javascript" src="../js/jquery-weui.js"></script>
+    <script>
+        $('body').find('.pay-type-box').on('click', 'div.pay-item', function() {
+            $(this).addClass('on').siblings().removeClass('on');
+            $(this).find('i').attr('class', 'weui-icon-success').parent().siblings().find('i').attr('class', 'weui-icon-circle');
+        });
+    </script>
+</body>
+</html>

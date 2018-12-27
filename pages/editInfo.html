@@ -27,7 +27,7 @@
                         <img src="../images/comment-head.png" alt="">
                     </div>
                 </a>
-                <a class="weui-cell weui-cell_access" href="javascript:;">
+                <a class="weui-cell weui-cell_access" href="javascript:$('.change-name-modal').show().next().show();">
                     <div class="weui-cell__bd">
                       <p>真实姓名</p>
                     </div>
@@ -47,6 +47,13 @@
                 </a>
             </div>
         </div>
+    </div>
+
+    <div class="change-name-modal hide"></div>
+    <div class="change-name-modal-content hide">
+        <div class="f32 c3 txt_center mt20">修改姓名</div>
+        <input type="text" placeholder="请输入真实姓名" />
+        <div class="sure-change-btn">确认修改</div>
     </div>
 
     <script type="text/javascript" src="../js/jquery-2.1.4.js"></script>
@@ -70,6 +77,25 @@
                 }]
             });
         }
+
+        // 关闭弹框
+        $('.change-name-modal').click(function() {
+            $(this).hide().next().hide();
+        })
+
+        $('.sure-change-btn').click(function() {
+            var name = $(this).prev().val();
+            if (name == '') {
+                $.toast("真实姓名不能为空", "text");
+                return false;
+            }
+            if (!isNaN(name)) {
+                $.toast("姓名格式错误","text");
+                return false;
+            }
+
+            $(this).parent().hide().prev().hide();
+        })
     </script>
 </body>
 </html>

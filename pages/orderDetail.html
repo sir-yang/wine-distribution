@@ -26,6 +26,37 @@
                     <span>请于23时59分38秒内完成支付，超时订单将自动关闭</span>
                 </div>
             </div>
+            <!-- 等待出库 -->
+            <div class="order-detail-status-box flex_start hide">
+                <img class="order-status-icon flex_shrink" src="../images/order_out_of_icon.png" alt="">
+                <div class="flex1">
+                    <p class="f32 cf">商品出库中</p>
+                    <span>商品已出火速向小主奔来，请耐心等待~</span>
+                </div>
+            </div>
+            <!-- 订单取消 -->
+            <div class="order-detail-status-box flex_start hide" style="height: 1.2rem;">
+                <img class="order-status-icon flex_shrink" src="../images/order_cancel_icon.png" alt="">
+                <div class="flex1">
+                    <p class="f32 cf">订单已取消</p>
+                </div>
+            </div>
+            <!-- 已付款 -->
+            <div class="order-detail-status-box flex_start">
+                <img class="order-status-icon flex_shrink" src="../images/order_paid_icon.png" alt="">
+                <div class="flex1">
+                    <p class="f32 cf">已付款</p>
+                    <span>请等待惠酒商城发货</span>
+                </div>
+            </div>
+            <!-- 配送中 -->
+            <div class="order-detail-status-box flex_start hide">
+                <img class="order-status-icon flex_shrink" src="../images/order_distribution_icon.png" alt="">
+                <div class="flex1">
+                    <p class="f32 cf">等待买家收货</p>
+                    <span>正在配送，如果有任何问题，要记得与我们售后联系哦！</span>
+                </div>
+            </div>
             <!-- 等待收货 -->
             <div class="order-detail-status-box flex_start hide" style="height: 1.2rem;">
                 <img class="order-status-icon flex_shrink" src="../images/order_wait_receipt_icon.png" alt="">
@@ -34,19 +65,19 @@
                 </div>
             </div>
             <!-- 已完成 -->
-            <div class="order-detail-status-box flex_start" style="height: 1.2rem;">
+            <div class="order-detail-status-box flex_start hide" style="height: 1.2rem;">
                 <img class="order-status-icon flex_shrink" src="../images/order_finish_icon.png" alt="">
                 <div class="flex1">
                     <p class="f32 cf">订单已完成</p>
                 </div>
             </div>
-            <div class="delivery-info flex_between flex_items">
-                <div class="">
+            <a class="delivery-info flex_between flex_items" href="javascript:;">
+                <div>
                     <p>快递公司：顺丰快递</p>
                     <p class="mt10">快递单号：1001011111</p>
                 </div>
                 <img src="../images/right_icon.png" alt="">
-            </div>
+            </a>
 
             <div class="user-info">
                 <div class="flex_between flex_items">
@@ -86,36 +117,124 @@
             </div>
             
             <div class="order-detail-shop-info">
-                <div class="shop-item-info flex_start">
-                    <img class="shop-img flex_shrink" src="../images/shop_banner.png" alt="">
-                    <div class="txt-info">
-                        <h4 class="clamp2 f28 c3">郎酒  (langjiu)郎牌郎酒酱香型53度整箱 装500ml *6瓶 传世酱香 重...</h4>
-                        <div class="flex_between flex_items mt30">
-                            <span class="shop-num">x1</span>
-                            <span class="shop-price">¥ 1680.00</span>
+                <div>
+                    <div class="shop-item-info flex_start">
+                        <img class="shop-img flex_shrink" src="../images/shop_banner.png" alt="">
+                        <div class="txt-info">
+                            <h4 class="clamp2 f28 c3">郎酒  (langjiu)郎牌郎酒酱香型53度整箱 装500ml *6瓶 传世酱香 重...</h4>
+                            <div class="flex_between flex_items mt30">
+                                <span class="shop-num">x1</span>
+                                <span class="shop-price">¥ 1680.00</span>
+                            </div>
                         </div>
                     </div>
+                    <!-- 等待付款 -->
+                    <div class="flex_end flex_items hide">
+                        <button class="default-order-btn order-status-btn">取消订单</button>
+                        <button href="javascript:;" class="order-status-btn">立即支付</button>
+                    </div>
+                    <!-- 等待收货 -->
+                    <div class="flex_end flex_items hide">
+                        <button onclick="self.location.href='logisticsInfo.html'" class="default-order-btn order-status-btn">查看物流</button>
+                        <button class="order-status-btn">确认收货</button>
+                    </div>
+                    <!-- 已完成 -->
+                    <div class="flex_end flex_items">
+                        <button onclick="self.location.href='evaluation.html'" class="default-order-btn order-status-btn no-margin-right">立即评价</button>
+                    </div>
                 </div>
-                <!-- 等待付款 -->
-                <div class="flex_end flex_items hide">
-                    <button class="default-order-btn order-status-btn">取消订单</button>
-                    <button href="javascript:;" class="order-status-btn">立即支付</button>
-                </div>
-                <!-- 等待收货 -->
-                <div class="flex_end flex_items hide">
-                    <button onclick="self.location.href='logisticsInfo.html'" class="default-order-btn order-status-btn">查看物流</button>
-                    <button class="order-status-btn">确认收货</button>
-                </div>
-                <!-- 已完成 -->
-                <div class="flex_end flex_items">
-                    <button onclick="self.location.href='evaluation.html'" class="default-order-btn order-status-btn no-margin-right">立即评价</button>
+                <div>
+                    <div class="shop-item-info flex_start">
+                        <img class="shop-img flex_shrink" src="../images/shop_banner.png" alt="">
+                        <div class="txt-info">
+                            <h4 class="clamp2 f28 c3">郎酒  (langjiu)郎牌郎酒酱香型53度整箱 装500ml *6瓶 传世酱香 重...</h4>
+                            <div class="flex_between flex_items mt30">
+                                <span class="shop-num">x1</span>
+                                <span class="shop-price">¥ 1680.00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 等待付款 -->
+                    <div class="flex_end flex_items hide">
+                        <button class="default-order-btn order-status-btn">取消订单</button>
+                        <button href="javascript:;" class="order-status-btn">立即支付</button>
+                    </div>
+                    <!-- 等待收货 -->
+                    <div class="flex_end flex_items hide">
+                        <button onclick="self.location.href='logisticsInfo.html'" class="default-order-btn order-status-btn">查看物流</button>
+                        <button class="order-status-btn">确认收货</button>
+                    </div>
+                    <!-- 已完成 -->
+                    <div class="flex_end flex_items">
+                        <a href="javascript:;" class="default-order-btn order-status-btn">
+                            <img src="../images/share_btn_icon.png" alt="">
+                            <span>分享</span>
+                        </a>
+                        <a href="evaluation.html" class="order-status-btn">
+                            <img src="../images/edit_btn_icon.png" alt="">
+                            <span>评价</span>
+                        </a>
+                    </div>
                 </div>
             </div>
+
+            <div class="order-detail-footer-spacing"></div>
+            <div class="order-detail-footer flex_start flex_items">
+                <!-- <a href="javascript:;" class="footer_btn">立即支付</a> -->
+                <a href="javascript:;" class="footer_btn footer_btn_1">取消订单</a>
+                <!-- <a href="javascript:;" class="footer_btn footer_btn_2">确认收货</a> -->
+            </div>
         </div>
+    </div>
+
+    <!-- 退款原因弹框 -->
+    <div class="refund-reason-modal hide"></div>
+    <div class="refund-reason-modal-content hide">
+        <div class="modal-tit">退款原因</div>
+        <img src="../images/close_icon.png" class="modal-close-img" alt="">
+        <select>
+            <option value="0">选择原因</option>
+            <option value="1">质量问题</option>
+            <option value="2">商品不一致</option>
+            <option value="3">其他</option>
+        </select>
+
+        <textarea class="hide" placeholder="请输入退款原因" maxlength="200"></textarea>
+
+        <div class="sure-refund-btn">确认</div>
     </div>
 
 
     <script type="text/javascript" src="../js/jquery-2.1.4.js"></script>
     <script type="text/javascript" src="../js/jquery-weui.js"></script>
+    <script>
+        // 点击取消订单
+        $('body').find('.footer_btn_1').click(function() {
+            $('.refund-reason-modal').show().next().show();
+        })
+
+        // 监听原因选择
+        $('body').find('.refund-reason-modal-content').on('change', 'select', function() {
+            var vals = $(this).val();
+            if (vals == 3) {
+                $(this).next().show();
+            } else {
+                $(this).next().hide();
+            }
+        })
+
+        // 确认退款
+        $('.sure-refund-btn').click(function() {
+            var isHide = $(this).prev().is(':hidden');
+            if (!isHide && $(this).prev().val() == '') {
+                $.toast("退款原因不能为空", "text");
+            }
+        })
+
+        // 关闭退款弹框
+        $('.modal-close-img').click(function() {
+            $(this).parent().hide().prev().hide();
+        })
+    </script>
 </body>
 </html>

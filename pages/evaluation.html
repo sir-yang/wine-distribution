@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../css/evaluation.css">
     <script src="../js/setFontSize.js"></script>
-    <title>订单详情</title>
+    <title>评价晒单</title>
 </head>
 <body>
 
@@ -22,10 +22,10 @@
                 <img class="shop-img" src="../images/shop_banner.png" alt="">
                 <label class="f30 c3">评分：</label>
                 <div class="flex_start flex_items star-img-box ml20">
-                    <img src="../images/star_1.png" alt="">
-                    <img src="../images/star_1.png" alt="">
-                    <img src="../images/star_1.png" alt="">
-                    <img src="../images/star_1.png" alt="">
+                    <img src="../images/star_2.png" alt="">
+                    <img src="../images/star_2.png" alt="">
+                    <img src="../images/star_2.png" alt="">
+                    <img src="../images/star_2.png" alt="">
                     <img src="../images/star_2.png" alt="">
                 </div>
             </div>
@@ -47,5 +47,13 @@
 
     <script type="text/javascript" src="../js/jquery-2.1.4.js"></script>
     <script type="text/javascript" src="../js/jquery-weui.js"></script>
+    <script>
+        $('body').find('.star-img-box').on('click', 'img', function() {
+            var grade = (Number($(this).index()) + 1) * 2;
+            $(this).attr('src', '../images/star_1.png').prevAll().attr('src', '../images/star_1.png');
+            $(this).nextAll().attr('src', '../images/star_2.png');
+            $('body').data('grade', )
+        });
+    </script>
 </body>
 </html>

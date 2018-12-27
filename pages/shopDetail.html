@@ -161,6 +161,7 @@
             </div>
             <div class="small-btn">
                 <div class="small-img">
+                    <i class="bubble">1</i>
                     <img src="../images/cart_icon.png" alt="" style="width: .3rem;height: .28rem;">
                 </div>
                 <span>购物车</span>
@@ -240,10 +241,8 @@
 
         // 评论/详情切换
         $('body').find('.detail-comment').on('click', 'div', function() {
-            console.log($(this).index());
             $(this).addClass('on').siblings().removeClass('on');
             var index = $(this).index();
-            console.log($('.detail-comment-list-box').is(':hidden'));
             if (index == 1 && $('.detail-comment-list-box').is(':hidden')) {
                 $('.detail-comment-list-box').removeClass('hide').prev().addClass('hide');
             } else if (index == 0 && $('.detail-row').is(':hidden')) {
