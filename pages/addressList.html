@@ -19,26 +19,39 @@
     <div class="page">
         <div class="page__bd" style="height: 100%;">
             <ul>
-                <li class="address-item-box flex_between flex_items">
-                    <div class="address-left">
-                        <p class="f32 c3">周星星<span class="f28 c9 ml20">18628805420</span></p>
-                        <p class="f28 c6">四川省成都市金牛区九里堤南路</p>
+                <li>
+                    <div class="weui-cell weui-cell_swiped">
+                        <div class="weui-cell__bd">
+                            <div class="weui-cell address-item-box">
+                                <div class="address-left flex1 mr30">
+                                    <p class="f32 c3">周星星<span class="f28 c9 ml20">18628805420</span></p>
+                                    <p class="f28 c6">四川省成都市金牛区九里堤南路</p>
+                                </div>
+                                <a href="editAddress.html" class="address-right">编辑</a>
+                            </div>
+                        </div>
+                        <div class="weui-cell__ft">
+                            <a class="weui-swiped-btn weui-swiped-btn_warn flex_start flex_items delete-swipeout" href="javascript:;">删除</a>
+                            <a class="weui-swiped-btn weui-swiped-btn_default flex_start flex_items close-swipeout" href="javascript:;">设为默认</a>
+                        </div>
                     </div>
-                    <a href="editAddress.html" class="address-right">编辑</a>
                 </li>
-                <li class="address-item-box flex_between flex_items">
-                    <div class="address-left">
-                        <p class="f32 c3">周星星<span class="f28 c9 ml20">18628805420</span></p>
-                        <p class="f28 c6">四川省成都市金牛区九里堤南路</p>
+                <li>
+                    <div class="weui-cell weui-cell_swiped">
+                        <div class="weui-cell__bd">
+                            <div class="weui-cell address-item-box">
+                                <div class="address-left flex1 mr30">
+                                    <p class="f32 c3">周星星<span class="f28 c9 ml20">18628805420</span></p>
+                                    <p class="f28 c6">四川省成都市金牛区九里堤南路</p>
+                                </div>
+                                <a href="editAddress.html" class="address-right">编辑</a>
+                            </div>
+                        </div>
+                        <div class="weui-cell__ft">
+                            <a class="weui-swiped-btn weui-swiped-btn_warn flex_start flex_items delete-swipeout" href="javascript:;">删除</a>
+                            <a class="weui-swiped-btn weui-swiped-btn_default flex_start flex_items close-swipeout" href="javascript:;">设为默认</a>
+                        </div>
                     </div>
-                    <a href="editAddress.html" class="address-right">编辑</a>
-                </li>
-                <li class="address-item-box flex_between flex_items">
-                    <div class="address-left">
-                        <p class="f32 c3">周星星<span class="f28 c9 ml20">18628805420</span></p>
-                        <p class="f28 c6">四川省成都市金牛区九里堤南路</p>
-                    </div>
-                    <a href="javascript:;" class="address-right">编辑</a>
                 </li>
             </ul>
 
@@ -49,5 +62,14 @@
 
     <script type="text/javascript" src="../js/jquery-2.1.4.js"></script>
     <script type="text/javascript" src="../js/jquery-weui.js"></script>
+    <script>
+        $('.delete-swipeout').click(function () {
+            $(this).parents('.weui-cell').remove()
+        })
+        $('.close-swipeout').click(function () {
+            $(this).parents('.weui-cell').swipeout('close')
+        })
+        $('.weui-swiped-btn').swipeout('close') //关闭
+    </script>
 </body>
 </html>

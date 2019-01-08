@@ -38,22 +38,39 @@
                     </div>
                 </div>
                 <div class="wattle-call flex_between flex_items bgcolor">
-                    <div class="wallet-left flex_start">
-                        <label>提现金额不能小于1.00元</label>
+                    <div class="flex1 flex_between flex_items">
+                        <div>提现方式</div>
+                        <label class="c6">提现金额不能小于1.00元</label>
                     </div>
                     <div class="wattle-right flex_start flex_items"></div>
                 </div>
-                <div class="wattle-call flex_between flex_items">
-                    <div class="wallet-left flex_start">
-                        <label>提现方式</label>
-                        <div class="wattle-type">
-                            <img src="../images/wx_wattle_icon.png" alt="">
-                            <span>微信</span>
+
+                <div class="wattle-call pay-types-box flex_between flex_items">
+                    <div class="flex1 flex_start flex_items">
+                        <img class="pay-types-icon" src="../images/wechat.png" alt="">
+                        <div class="pay-types">
+                            <p>微信支付</p>
+                            <span>推荐使用微信支付</span>
                         </div>
                     </div>
-                    <div class="wattle-right flex_start flex_items"></div>
+                    <div class="wattle-right flex_start flex_items">
+                        <i class="weui-icon-success"></i>
+                    </div>
                 </div>
-                <div class="wattle-call flex_between flex_items">
+                <div class="wattle-call pay-types-box flex_between flex_items">
+                    <div class="flex1 flex_start flex_items">
+                        <img class="pay-types-icon" src="../images/zhifubao.png" alt="">
+                        <div class="pay-types">
+                            <p>支付宝支付</p>
+                            <span>支付宝付款</span>
+                        </div>
+                    </div>
+                    <div class="wattle-right flex_start flex_items">
+                        <i class="weui-icon-circle"></i>
+                    </div>
+                </div>
+
+                <div class="wattle-call mt20 flex_between flex_items">
                     <div class="wallet-left flex_start">
                         <span class="mast">姓名</span>
                         <i class="color">*</i>
@@ -71,11 +88,28 @@
                 </div>
             </div>
 
+            <div class="upload-box">
+                <img class="code-img" src="../images/add_img_icon.png" alt="">
+                <span>上传收款码</span>
+            </div>
+
             <a href="javascript:;" class="submit-apply-btn">提交申请</a>
         </div>
     </div>
 
     <script type="text/javascript" src="../js/jquery-2.1.4.js"></script>
     <script type="text/javascript" src="../js/jquery-weui.js"></script>
+    <script>
+        $('.pay-types-box').click(function(){
+            var checked = $(this).find('i').hasClass('weui-icon-success');
+            if (checked) {
+                $(this).siblings('.pay-types-box').find('i').attr('class', 'weui-icon-success');
+                $(this).find('i').attr('class', 'weui-icon-circle');
+            } else {
+                $(this).siblings('.pay-types-box').find('i').attr('class', 'weui-icon-circle');
+                $(this).find('i').attr('class', 'weui-icon-success');
+            }
+        })
+    </script>
 </body>
 </html>

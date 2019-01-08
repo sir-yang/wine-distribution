@@ -52,10 +52,53 @@
                     <span></span>
                 </div>
             </div>
+
+            <a class="logistics-btn after-sale-btn" href="javascript:;">填写物流信息</a>
+            <a class="cancel-btn after-sale-btn" href="javascript:;">取消售后单</a>
         </div>
+    </div>
+
+    <!-- 退款原因弹框 -->
+    <div class="logistics-modal hide"></div>
+    <div class="logistics-modal-content hide">
+        <div class="modal-tit">填写物流</div>
+        <img src="../images/close_icon.png" class="modal-close-img" alt="">
+        <div class="flex_start flex_items plr30">
+            <label>快递公司</label>
+            <select>
+                <option value="0">选择原因</option>
+                <option value="1">质量问题</option>
+                <option value="2">商品不一致</option>
+                <option value="3">其他</option>
+            </select>
+        </div>
+
+        <div class="flex_start flex_items plr30 mt20">
+            <label>快递单号</label>
+            <input name="orderNo" type="text" placeholder="请输入快递单号">
+        </div>
+
+        <div class="sure-refund-btn">确认</div>
     </div>
 
     <script type="text/javascript" src="../js/jquery-2.1.4.js"></script>
     <script type="text/javascript" src="../js/jquery-weui.js"></script>
+    <script>
+        $('.logistics-btn').click(function() {
+            $('.logistics-modal').show().next().show();
+        });
+
+        $('.modal-close-img').click(function() {
+            $(this).parent().hide().prev().hide();
+        })
+        $('.sure-refund-btn').click(function() {
+            var orderNo = $('input[name=orderNo]').val();
+            if (orderNo == '') {
+                $.toast('请填写快递单号','text');
+                return false;
+            }
+            $('.modal-close-img').click();
+        })
+    </script>
 </body>
 </html>

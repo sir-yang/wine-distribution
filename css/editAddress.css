@@ -65,6 +65,9 @@
 	font-size: .36rem;
 }
 
+.weui-picker-modal {
+	height: 8rem;
+}
 .toolbar {
 	font-size: .36rem;
 }
@@ -73,4 +76,17 @@
 }
 .weui-picker-modal .picker-items {
 	font-size: .32rem;
+}
+.toolbar .toolbar-inner {
+	height: 1.2rem;
+}
+.toolbar .picker-button {
+	height: 1.2rem;
+	line-height: 1.2rem;
+}
+.toolbar .title {
+	line-height: 1.2rem;
+}
+.weui-picker-modal .picker-modal-inner {
+	height: 6.8rem;
 }

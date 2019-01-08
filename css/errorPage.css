@@ -1,0 +1,38 @@
+.page__bd {
+	position: absolute;
+	top: 50%;
+	width: 100%;
+	transform: translateY(-50%);
+}
+.error-icon {
+	display: block;
+	width: 3.69rem;
+	height: 2.9rem;
+	margin: auto;
+}
+
+.page__bd > p {
+	margin-top: 1rem;
+	margin-bottom: .2rem;
+}
+.back_prev_btn {
+	text-align: center;
+	font-size: .36rem;
+	color: #dd0a35;
+}
+
+.back_home_btn {
+	display: block;
+	width: 2.26rem;
+	height: .88rem;
+	margin: auto;
+	text-align: center;
+	line-height: .88rem;
+	font-size: .36rem;
+	color: #fff;
+	background: #dd0a35;
+	-webkit-border-radius: .22rem;
+	-moz-border-radius: .22rem;
+	-o-border-radius: .22rem;
+	border-radius: .22rem;
+}
